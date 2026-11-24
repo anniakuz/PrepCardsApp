@@ -1,0 +1,484 @@
+{
+ "questions": [
+  {
+   "level": 1,
+   "text": "¿Qué sentencia lee datos de una tabla?",
+   "choices": [
+    "GET",
+    "SELECT",
+    "READ",
+    "FETCH"
+   ],
+   "answer": 1,
+   "explanation": "SELECT consulta filas y columnas."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué cláusula filtra filas?",
+   "choices": [
+    "FILTER",
+    "IF",
+    "WHERE",
+    "ORDER"
+   ],
+   "answer": 2,
+   "explanation": "Se escribe después de FROM."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué sentencia inserta una fila nueva?",
+   "choices": [
+    "ADD ROW",
+    "PUT",
+    "INSERT INTO",
+    "APPEND"
+   ],
+   "answer": 2,
+   "explanation": "INSERT INTO tabla (cols) VALUES (...)."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué hace SELECT * FROM clientes;?",
+   "choices": [
+    "Devuelve solo la primera fila",
+    "Borra los clientes",
+    "Devuelve todas las columnas de todas las filas de clientes",
+    "Cuenta los clientes"
+   ],
+   "answer": 2,
+   "explanation": "El asterisco significa todas las columnas."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué cláusula ordena el resultado?",
+   "choices": [
+    "GROUP BY",
+    "SORT BY",
+    "ARRANGE",
+    "ORDER BY"
+   ],
+   "answer": 3,
+   "explanation": "Por defecto ordena de forma ascendente."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué sentencia modifica filas existentes?",
+   "choices": [
+    "MODIFY",
+    "ALTER ROW",
+    "UPDATE",
+    "CHANGE"
+   ],
+   "answer": 2,
+   "explanation": "Sin WHERE modifica todas las filas."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué función cuenta filas?",
+   "choices": [
+    "SUM(*)",
+    "TOTAL()",
+    "COUNT(*)",
+    "LEN(*)"
+   ],
+   "answer": 2,
+   "explanation": "Cuenta todas las filas, incluso con valores NULL."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es una clave primaria?",
+   "choices": [
+    "Una copia de seguridad",
+    "La primera columna de la tabla",
+    "Una columna que siempre es de texto",
+    "Una columna o conjunto de columnas que identifica de forma única cada fila"
+   ],
+   "answer": 3,
+   "explanation": "No puede repetirse ni ser NULL."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace DELETE FROM t sin WHERE?",
+   "choices": [
+    "Borra todas las filas de la tabla",
+    "Borra solo la última fila",
+    "Borra la tabla",
+    "No hace nada"
+   ],
+   "answer": 0,
+   "explanation": "La tabla sigue existiendo, vacía."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué devuelve un INNER JOIN?",
+   "choices": [
+    "Todas las filas de ambas tablas",
+    "Solo las filas con coincidencia en ambas tablas",
+    "Todas las filas de la tabla izquierda",
+    "El producto cartesiano"
+   ],
+   "answer": 1,
+   "explanation": "Las filas sin pareja no aparecen."
+  },
+  {
+   "level": 2,
+   "text": "¿Para qué sirve GROUP BY?",
+   "choices": [
+    "Ordenar filas",
+    "Filtrar antes de leer",
+    "Unir tablas",
+    "Agrupar filas para aplicar funciones de agregado"
+   ],
+   "answer": 3,
+   "explanation": "Se usa con COUNT, SUM, AVG y similares."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es una clave foránea?",
+   "choices": [
+    "Una columna que referencia la clave primaria de otra tabla",
+    "Una clave cifrada",
+    "Una clave que se repite sin relación",
+    "Una clave de otro servidor"
+   ],
+   "answer": 0,
+   "explanation": "Garantiza la integridad referencial."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace LIMIT 10?",
+   "choices": [
+    "Crea 10 filas",
+    "Devuelve como máximo 10 filas",
+    "Divide la tabla en 10",
+    "Borra 10 filas"
+   ],
+   "answer": 1,
+   "explanation": "Se suele combinar con ORDER BY."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué operador busca patrones de texto?",
+   "choices": [
+    "CONTAINS",
+    "FIND",
+    "MATCH",
+    "LIKE"
+   ],
+   "answer": 3,
+   "explanation": "El símbolo % representa cualquier secuencia de caracteres."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué diferencia hay entre WHERE y HAVING?",
+   "choices": [
+    "Son iguales",
+    "HAVING filtra antes de agrupar",
+    "WHERE solo funciona con números",
+    "WHERE filtra filas antes de agrupar y HAVING filtra los grupos después"
+   ],
+   "answer": 3,
+   "explanation": "HAVING puede usar funciones de agregado."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué devuelve SELECT DISTINCT ciudad FROM clientes?",
+   "choices": [
+    "Las ciudades repetidas",
+    "Las ciudades sin repetir",
+    "Las ciudades ordenadas",
+    "El número de ciudades"
+   ],
+   "answer": 1,
+   "explanation": "DISTINCT elimina duplicados."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué devuelve un LEFT JOIN?",
+   "choices": [
+    "Solo las coincidencias",
+    "Solo las que no coinciden",
+    "Todas las filas de la tabla izquierda y las coincidencias de la derecha, con NULL si no hay",
+    "Todas las filas de la derecha"
+   ],
+   "answer": 2,
+   "explanation": "Es útil para encontrar filas sin relación."
+  },
+  {
+   "level": 3,
+   "text": "¿Cómo se comprueba si un valor es NULL?",
+   "choices": [
+    "= NULL",
+    "== NULL",
+    "IS NULL",
+    "EQUALS NULL"
+   ],
+   "answer": 2,
+   "explanation": "Comparar con = NULL nunca da verdadero."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es un índice?",
+   "choices": [
+    "Una copia de la tabla",
+    "Una estructura que acelera las búsquedas en una columna",
+    "Un tipo de dato",
+    "Una restricción de unicidad siempre"
+   ],
+   "answer": 1,
+   "explanation": "A cambio, ralentiza un poco las escrituras."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace COALESCE(a, b)?",
+   "choices": [
+    "Devuelve el mayor",
+    "Devuelve el primer valor que no es NULL",
+    "Compara a y b",
+    "Une dos cadenas"
+   ],
+   "answer": 1,
+   "explanation": "Es útil para dar valores por defecto."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es una subconsulta?",
+   "choices": [
+    "Una consulta dentro de otra",
+    "Una vista materializada",
+    "Una consulta en otro servidor",
+    "Una tabla temporal"
+   ],
+   "answer": 0,
+   "explanation": "Puede ir en WHERE, FROM o SELECT."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace UNION?",
+   "choices": [
+    "Une tablas por una clave",
+    "Mantiene los duplicados",
+    "Resta dos consultas",
+    "Combina los resultados de dos consultas y quita los duplicados"
+   ],
+   "answer": 3,
+   "explanation": "UNION ALL conserva los duplicados."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué restricción impide valores repetidos en una columna que no es la clave primaria?",
+   "choices": [
+    "NOT NULL",
+    "UNIQUE",
+    "CHECK",
+    "DEFAULT"
+   ],
+   "answer": 1,
+   "explanation": "Permite uno o varios NULL según el motor."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es una vista?",
+   "choices": [
+    "Una consulta guardada con nombre que se usa como una tabla",
+    "Un usuario",
+    "Una copia física de los datos",
+    "Un índice"
+   ],
+   "answer": 0,
+   "explanation": "No almacena datos propios salvo que sea materializada."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué significa ACID?",
+   "choices": [
+    "Automático, cifrado, indexado y distribuido",
+    "Atomicidad, concurrencia, índices y datos",
+    "Atomicidad, consistencia, aislamiento y durabilidad",
+    "Acceso, control, integridad y datos"
+   ],
+   "answer": 2,
+   "explanation": "Son las garantías de una transacción."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace una función de ventana como ROW_NUMBER() OVER (...)?",
+   "choices": [
+    "Calcula un valor por fila sin juntar las filas en grupos",
+    "Crea un índice",
+    "Borra duplicados",
+    "Agrupa las filas en una sola"
+   ],
+   "answer": 0,
+   "explanation": "Permite rankings y acumulados."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es la normalización?",
+   "choices": [
+    "Convertir todo a texto",
+    "Cifrar los datos",
+    "Crear índices en todo",
+    "Organizar las tablas para reducir la redundancia y mantener la integridad"
+   ],
+   "answer": 3,
+   "explanation": "Se describe con formas normales como la 1FN, 2FN y 3FN."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace EXPLAIN en una consulta?",
+   "choices": [
+    "Ejecuta la consulta dos veces",
+    "Crea un índice",
+    "Muestra el plan de ejecución que usará la base de datos",
+    "Explica el error"
+   ],
+   "answer": 2,
+   "explanation": "Sirve para ver si se usan índices."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es una CTE (WITH)?",
+   "choices": [
+    "Un trigger",
+    "Un tipo de join",
+    "Una tabla permanente",
+    "Una consulta con nombre definida antes de la consulta principal"
+   ],
+   "answer": 3,
+   "explanation": "Hace más legibles las consultas complejas."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué evita una transacción con ROLLBACK?",
+   "choices": [
+    "Que la consulta sea lenta",
+    "Que se repitan claves",
+    "Dejar cambios a medias si algo falla",
+    "Que se creen índices"
+   ],
+   "answer": 2,
+   "explanation": "ROLLBACK deshace todo lo hecho desde el inicio."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es el problema N+1?",
+   "choices": [
+    "Tener N tablas más una",
+    "Un error de sintaxis",
+    "Una restricción de claves",
+    "Hacer una consulta para la lista y otra por cada elemento en lugar de usar un join"
+   ],
+   "answer": 3,
+   "explanation": "Se resuelve con joins o con carga anticipada."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué diferencia hay entre COUNT(columna) y COUNT(*)?",
+   "choices": [
+    "COUNT(columna) cuenta los NULL",
+    "Son siempre iguales",
+    "COUNT(*) ignora los NULL",
+    "COUNT(columna) ignora los NULL y COUNT(*) cuenta todas las filas"
+   ],
+   "answer": 3,
+   "explanation": "Un resultado distinto indica que hay NULL en esa columna."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué nivel de aislamiento evita lecturas sucias pero permite lecturas no repetibles?",
+   "choices": [
+    "READ UNCOMMITTED",
+    "REPEATABLE READ",
+    "SERIALIZABLE",
+    "READ COMMITTED"
+   ],
+   "answer": 3,
+   "explanation": "Cada consulta ve solo lo ya confirmado, pero puede cambiar entre dos lecturas."
+  },
+  {
+   "level": 5,
+   "text": "¿Por qué importa el orden de las columnas en un índice compuesto?",
+   "choices": [
+    "Solo se aprovecha por completo si se filtra por sus primeras columnas",
+    "El orden no importa nunca",
+    "Es un índice duplicado",
+    "Solo sirve para ordenar"
+   ],
+   "answer": 0,
+   "explanation": "Un índice (a, b) sirve para filtrar por a, pero no para filtrar solo por b."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es un deadlock?",
+   "choices": [
+    "Una tabla corrupta",
+    "Una consulta muy lenta",
+    "Una conexión caída",
+    "Dos transacciones se esperan mutuamente por bloqueos y ninguna avanza"
+   ],
+   "answer": 3,
+   "explanation": "El motor detecta el ciclo y cancela una de ellas."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace un índice parcial?",
+   "choices": [
+    "Indexa solo los primeros registros",
+    "Indexa tablas temporales",
+    "Indexa la mitad de las columnas",
+    "Indexa solo las filas que cumplen una condición"
+   ],
+   "answer": 3,
+   "explanation": "Reduce su tamaño. Está disponible, por ejemplo, en PostgreSQL."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es MVCC?",
+   "choices": [
+    "Un control de concurrencia que mantiene varias versiones de las filas para que lectores y escritores no se bloqueen",
+    "Un lenguaje de procedimientos",
+    "Un protocolo de replicación",
+    "Un tipo de índice"
+   ],
+   "answer": 0,
+   "explanation": "Lo usan PostgreSQL y otros motores."
+  },
+  {
+   "level": 5,
+   "text": "¿En qué caso suele ser mala idea crear un índice?",
+   "choices": [
+    "En una columna de clave foránea",
+    "En una columna que se actualiza muchísimo y casi nunca se consulta",
+    "En una columna usada en JOIN",
+    "En una columna usada en WHERE"
+   ],
+   "answer": 1,
+   "explanation": "Cada índice se actualiza en cada escritura."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace SELECT ... FOR UPDATE?",
+   "choices": [
+    "Crea una copia",
+    "Lee sin bloquear",
+    "Actualiza las filas",
+    "Bloquea las filas leídas hasta el final de la transacción"
+   ],
+   "answer": 3,
+   "explanation": "Evita que otra transacción las modifique mientras tanto."
+  },
+  {
+   "level": 5,
+   "text": "¿Por qué WHERE LOWER(email) = 'x' puede no usar el índice de email?",
+   "choices": [
+    "Porque email es texto",
+    "Porque falta LIMIT",
+    "Porque LOWER es siempre lenta",
+    "Porque la función se aplica a la columna y el índice es sobre el valor original"
+   ],
+   "answer": 3,
+   "explanation": "La solución es un índice funcional sobre LOWER(email)."
+  }
+ ]
+}

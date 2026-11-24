@@ -1,0 +1,484 @@
+{
+ "questions": [
+  {
+   "level": 1,
+   "text": "¿Qué es un patrón de diseño?",
+   "choices": [
+    "Un lenguaje de programación",
+    "Una solución reutilizable a un problema habitual de diseño de software",
+    "Un tipo de base de datos",
+    "Una librería de código"
+   ],
+   "answer": 1,
+   "explanation": "Describe una idea, no un código listo para copiar."
+  },
+  {
+   "level": 1,
+   "text": "¿Cuántas instancias permite el patrón Singleton?",
+   "choices": [
+    "Dos",
+    "Ninguna",
+    "Una sola",
+    "Tantas como se pidan"
+   ],
+   "answer": 2,
+   "explanation": "Ofrece un punto de acceso global a esa instancia."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué agrupa los patrones creacionales?",
+   "choices": [
+    "Formas de crear objetos",
+    "Formas de comunicar objetos",
+    "Formas de pintar interfaces",
+    "Formas de guardar datos"
+   ],
+   "answer": 0,
+   "explanation": "Factory, Builder y Singleton son creacionales."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué patrón crea objetos sin exponer qué clase concreta se instancia?",
+   "choices": [
+    "Adapter",
+    "Factory",
+    "Decorator",
+    "Observer"
+   ],
+   "answer": 1,
+   "explanation": "El cliente pide un objeto y la fábrica decide cuál."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué patrón notifica a varios objetos cuando algo cambia?",
+   "choices": [
+    "Singleton",
+    "Facade",
+    "Observer",
+    "Builder"
+   ],
+   "answer": 2,
+   "explanation": "Los observadores se suscriben al sujeto."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué patrón ofrece una interfaz simple a un subsistema complejo?",
+   "choices": [
+    "Proxy",
+    "Prototype",
+    "Facade",
+    "Strategy"
+   ],
+   "answer": 2,
+   "explanation": "Oculta la complejidad detrás de una fachada."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué son los patrones estructurales?",
+   "choices": [
+    "Los que gestionan hilos",
+    "Los que organizan cómo se componen clases y objetos",
+    "Los que crean objetos",
+    "Los que definen el comportamiento"
+   ],
+   "answer": 1,
+   "explanation": "Adapter, Decorator y Facade lo son."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué son los patrones de comportamiento?",
+   "choices": [
+    "Los que crean objetos",
+    "Los que componen estructuras",
+    "Los que gestionan memoria",
+    "Los que definen cómo colaboran y se comunican los objetos"
+   ],
+   "answer": 3,
+   "explanation": "Observer, Strategy y Command lo son."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Strategy?",
+   "choices": [
+    "Crea una única instancia",
+    "Notifica cambios",
+    "Permite intercambiar algoritmos en tiempo de ejecución",
+    "Convierte una interfaz en otra"
+   ],
+   "answer": 2,
+   "explanation": "Cada algoritmo se encapsula en su propia clase."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Adapter?",
+   "choices": [
+    "Convierte la interfaz de una clase en otra que el cliente espera",
+    "Añade responsabilidades dinámicamente",
+    "Crea familias de objetos",
+    "Controla el acceso a un objeto"
+   ],
+   "answer": 0,
+   "explanation": "Permite que clases incompatibles trabajen juntas."
+  },
+  {
+   "level": 2,
+   "text": "¿Para qué sirve el patrón Builder?",
+   "choices": [
+    "Construir objetos complejos paso a paso",
+    "Limitar instancias",
+    "Clonar objetos",
+    "Observar cambios"
+   ],
+   "answer": 0,
+   "explanation": "Evita constructores con muchos parámetros."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Decorator?",
+   "choices": [
+    "Recorre colecciones",
+    "Crea una instancia única",
+    "Oculta un subsistema",
+    "Añade comportamiento a un objeto sin modificar su clase"
+   ],
+   "answer": 3,
+   "explanation": "Se envuelve el objeto en otro con la misma interfaz."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Prototype?",
+   "choices": [
+    "Controla el acceso",
+    "Define un algoritmo",
+    "Crea objetos con una fábrica",
+    "Crea nuevos objetos clonando uno existente"
+   ],
+   "answer": 3,
+   "explanation": "Es útil cuando crear desde cero es costoso."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Iterator?",
+   "choices": [
+    "Ordena la colección",
+    "Bloquea la colección",
+    "Duplica la colección",
+    "Recorre los elementos de una colección sin exponer su estructura"
+   ],
+   "answer": 3,
+   "explanation": "Muchos lenguajes lo incluyen de serie."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Proxy?",
+   "choices": [
+    "Controla el acceso a otro objeto mediante un sustituto",
+    "Crea objetos",
+    "Notifica eventos",
+    "Convierte interfaces"
+   ],
+   "answer": 0,
+   "explanation": "Se usa, por ejemplo, para carga perezosa o control de permisos."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el patrón Command?",
+   "choices": [
+    "Encapsula una petición como un objeto",
+    "Recorre una lista",
+    "Crea una familia de objetos",
+    "Define pasos de un algoritmo"
+   ],
+   "answer": 0,
+   "explanation": "Permite encolar, deshacer o registrar operaciones."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué diferencia hay entre Factory Method y Abstract Factory?",
+   "choices": [
+    "Son iguales",
+    "Abstract Factory crea un solo tipo siempre",
+    "Factory Method crea familias",
+    "Abstract Factory crea familias de objetos relacionados y Factory Method un solo producto"
+   ],
+   "answer": 3,
+   "explanation": "Abstract Factory agrupa varias fábricas coherentes."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace el patrón Template Method?",
+   "choices": [
+    "Clona objetos",
+    "Define el esqueleto de un algoritmo y deja pasos a las subclases",
+    "Intercambia algoritmos en ejecución",
+    "Compone objetos en árbol"
+   ],
+   "answer": 1,
+   "explanation": "Se apoya en herencia, a diferencia de Strategy."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace el patrón Composite?",
+   "choices": [
+    "Trata igual a un objeto simple y a un grupo de objetos en estructura de árbol",
+    "Crea objetos únicos",
+    "Notifica cambios",
+    "Cambia el comportamiento según el estado"
+   ],
+   "answer": 0,
+   "explanation": "Un ejemplo es un sistema de carpetas y archivos."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace el patrón State?",
+   "choices": [
+    "Oculta la complejidad",
+    "Crea objetos",
+    "Cambia el comportamiento del objeto según su estado interno",
+    "Guarda un historial"
+   ],
+   "answer": 2,
+   "explanation": "Evita grandes condicionales por estado."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué problema suele traer el Singleton?",
+   "choices": [
+    "Impide la herencia siempre",
+    "Estado global difícil de probar y acoplamiento",
+    "No se puede instanciar",
+    "Consume demasiada CPU"
+   ],
+   "answer": 1,
+   "explanation": "Por eso se prefiere inyectar dependencias."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué patrón separa una abstracción de su implementación para que varíen por separado?",
+   "choices": [
+    "Bridge",
+    "Facade",
+    "Flyweight",
+    "Adapter"
+   ],
+   "answer": 0,
+   "explanation": "Evita una explosión de subclases."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es MVC?",
+   "choices": [
+    "Un patrón que separa modelo, vista y controlador",
+    "Un patrón de creación",
+    "Un tipo de base de datos",
+    "Un protocolo de red"
+   ],
+   "answer": 0,
+   "explanation": "Cada parte tiene una responsabilidad distinta."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué patrón se usa para deshacer y rehacer cambios guardando el estado anterior?",
+   "choices": [
+    "Visitor",
+    "Chain of Responsibility",
+    "Memento",
+    "Mediator"
+   ],
+   "answer": 2,
+   "explanation": "Guarda instantáneas sin romper el encapsulamiento."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace el patrón Chain of Responsibility?",
+   "choices": [
+    "Pasa una petición por una cadena de manejadores hasta que uno la atiende",
+    "Crea una cadena de objetos",
+    "Convierte interfaces",
+    "Notifica a todos los suscriptores"
+   ],
+   "answer": 0,
+   "explanation": "Los middleware web siguen esta idea."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace el patrón Mediator?",
+   "choices": [
+    "Recorre colecciones",
+    "Clona objetos",
+    "Notifica cambios en uno a muchos",
+    "Centraliza la comunicación entre objetos para que no se refieran entre sí"
+   ],
+   "answer": 3,
+   "explanation": "Reduce el acoplamiento entre componentes."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué diferencia hay entre Decorator y Proxy?",
+   "choices": [
+    "Decorator añade comportamiento y Proxy controla el acceso",
+    "Decorator solo controla el acceso",
+    "Proxy añade funcionalidad siempre",
+    "Son lo mismo"
+   ],
+   "answer": 0,
+   "explanation": "Estructuralmente se parecen, pero la intención es distinta."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace el patrón Visitor?",
+   "choices": [
+    "Recorre una lista",
+    "Cambia el estado",
+    "Añade operaciones a una estructura de objetos sin modificar sus clases",
+    "Crea objetos"
+   ],
+   "answer": 2,
+   "explanation": "Usa doble despacho."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace el patrón Flyweight?",
+   "choices": [
+    "Crea un objeto único",
+    "Clona objetos",
+    "Encadena manejadores",
+    "Comparte objetos para reducir el uso de memoria"
+   ],
+   "answer": 3,
+   "explanation": "Separa el estado compartido del estado propio."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es la inyección de dependencias?",
+   "choices": [
+    "Compartir variables globales",
+    "Pasar a un objeto sus dependencias desde fuera en lugar de crearlas dentro",
+    "Heredar de la dependencia",
+    "Crear dependencias con new dentro"
+   ],
+   "answer": 1,
+   "explanation": "Facilita probar y cambiar implementaciones."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué principio SOLID resume el patrón Strategy mejor?",
+   "choices": [
+    "Responsabilidad única exclusivamente",
+    "Segregación de interfaces exclusivamente",
+    "Sustitución de Liskov exclusivamente",
+    "Abierto/cerrado: añadir comportamiento sin modificar el código existente"
+   ],
+   "answer": 3,
+   "explanation": "Se añaden estrategias nuevas sin tocar el cliente."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué patrón arquitectónico separa las operaciones de lectura de las de escritura?",
+   "choices": [
+    "MVC",
+    "Facade",
+    "CQRS",
+    "Singleton"
+   ],
+   "answer": 2,
+   "explanation": "Permite optimizar cada lado por separado."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace el patrón Repository?",
+   "choices": [
+    "Notifica cambios",
+    "Crea objetos",
+    "Guarda un historial de estados",
+    "Abstrae el acceso a datos para que el dominio no dependa del almacenamiento"
+   ],
+   "answer": 3,
+   "explanation": "Se suele combinar con Unit of Work."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es la arquitectura hexagonal?",
+   "choices": [
+    "Una arquitectura con seis capas",
+    "Un patrón de interfaces gráficas",
+    "Un modelo de base de datos",
+    "Aislar el dominio con puertos y adaptadores hacia el exterior"
+   ],
+   "answer": 3,
+   "explanation": "Las dependencias apuntan hacia el dominio."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace el patrón Circuit Breaker?",
+   "choices": [
+    "Cifra las llamadas",
+    "Balancea la carga",
+    "Corta llamadas a un servicio que falla para evitar fallos en cascada",
+    "Reintenta sin límite"
+   ],
+   "answer": 2,
+   "explanation": "Pasa por estados cerrado, abierto y semiabierto."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es Event Sourcing?",
+   "choices": [
+    "Crear eventos de interfaz",
+    "Guardar la secuencia de eventos en lugar del estado actual",
+    "Guardar solo el último estado",
+    "Enviar eventos por correo"
+   ],
+   "answer": 1,
+   "explanation": "El estado se reconstruye reproduciendo los eventos."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué problema resuelve el patrón Saga?",
+   "choices": [
+    "Cachear resultados",
+    "Dibujar interfaces",
+    "Coordinar transacciones distribuidas con pasos compensatorios",
+    "Crear objetos únicos"
+   ],
+   "answer": 2,
+   "explanation": "Si un paso falla, se deshacen los anteriores con acciones inversas."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es el patrón Outbox?",
+   "choices": [
+    "Enviar emails",
+    "Vaciar una cola",
+    "Guardar el evento en la misma transacción que los datos y publicarlo después",
+    "Guardar logs"
+   ],
+   "answer": 2,
+   "explanation": "Evita perder eventos o publicar sin confirmar el cambio."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es el principio de inversión de dependencias?",
+   "choices": [
+    "Todo debe heredar de una base",
+    "Las clases concretas dependen entre sí",
+    "Las dependencias deben ser globales",
+    "Los módulos de alto nivel dependen de abstracciones, no de implementaciones"
+   ],
+   "answer": 3,
+   "explanation": "Es la D de SOLID."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace el patrón Specification?",
+   "choices": [
+    "Define interfaces gráficas",
+    "Cifra datos",
+    "Crea hilos",
+    "Encapsula reglas de negocio combinables en objetos reutilizables"
+   ],
+   "answer": 3,
+   "explanation": "Permite combinar reglas con and, or y not."
+  }
+ ]
+}

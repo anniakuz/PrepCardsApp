@@ -1,0 +1,484 @@
+{
+ "questions": [
+  {
+   "level": 1,
+   "text": "¿Qué es AWS?",
+   "choices": [
+    "Un lenguaje de programación",
+    "Un navegador",
+    "Un sistema operativo",
+    "Una plataforma de servicios en la nube de Amazon"
+   ],
+   "answer": 3,
+   "explanation": "Ofrece cómputo, almacenamiento, redes y más bajo demanda."
+  },
+  {
+   "level": 1,
+   "text": "¿Para qué sirve Amazon S3?",
+   "choices": [
+    "Enviar correos",
+    "Gestionar DNS",
+    "Ejecutar máquinas virtuales",
+    "Almacenar objetos como archivos e imágenes"
+   ],
+   "answer": 3,
+   "explanation": "Es almacenamiento de objetos muy duradero."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es Amazon EC2?",
+   "choices": [
+    "Una base de datos",
+    "Un servicio de colas",
+    "Servidores virtuales en la nube",
+    "Una red CDN"
+   ],
+   "answer": 2,
+   "explanation": "Eliges tipo de instancia, sistema y almacenamiento."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es una región de AWS?",
+   "choices": [
+    "Un tipo de cuenta",
+    "Una red privada",
+    "Un centro de datos único",
+    "Una ubicación geográfica con varias zonas de disponibilidad"
+   ],
+   "answer": 3,
+   "explanation": "Por ejemplo, eu-west-1 o eu-south-2."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué significa pago por uso?",
+   "choices": [
+    "Pagas solo por los recursos que consumes",
+    "No se paga nada",
+    "Pagas por adelantado todo",
+    "Pagas una cuota fija anual"
+   ],
+   "answer": 0,
+   "explanation": "Es una ventaja clave de la nube."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es IAM?",
+   "choices": [
+    "Un monitor de costes",
+    "Un servicio de bases de datos",
+    "El servicio de usuarios, roles y permisos",
+    "Una red virtual"
+   ],
+   "answer": 2,
+   "explanation": "Controla quién puede hacer qué."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es una zona de disponibilidad?",
+   "choices": [
+    "Un tipo de instancia",
+    "Uno o más centros de datos aislados dentro de una región",
+    "Una cuenta de AWS",
+    "Un país"
+   ],
+   "answer": 1,
+   "explanation": "Usar varias mejora la tolerancia a fallos."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué es Amazon RDS?",
+   "choices": [
+    "Un servicio de bases de datos relacionales gestionadas",
+    "Una red privada",
+    "Un servicio de correo",
+    "Un servicio de archivos"
+   ],
+   "answer": 0,
+   "explanation": "Soporta PostgreSQL, MySQL y otros motores."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es una VPC?",
+   "choices": [
+    "Un servicio de DNS",
+    "Un plan de pago",
+    "Una red virtual privada dentro de AWS",
+    "Un tipo de instancia"
+   ],
+   "answer": 2,
+   "explanation": "Defines subredes, rutas y reglas de acceso."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es un grupo de seguridad?",
+   "choices": [
+    "Un grupo de usuarios",
+    "Un tipo de cifrado",
+    "Una copia de seguridad",
+    "Un cortafuegos virtual a nivel de instancia"
+   ],
+   "answer": 3,
+   "explanation": "Controla el tráfico de entrada y salida."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace AWS Lambda?",
+   "choices": [
+    "Cifra datos",
+    "Ejecuta código sin gestionar servidores",
+    "Almacena archivos",
+    "Crea redes"
+   ],
+   "answer": 1,
+   "explanation": "Pagas por ejecución y tiempo de cómputo."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es un rol de IAM?",
+   "choices": [
+    "Una identidad con permisos que servicios o usuarios pueden asumir",
+    "Un grupo de seguridad",
+    "Un usuario con contraseña fija",
+    "Un tipo de política de red"
+   ],
+   "answer": 0,
+   "explanation": "Evita guardar claves de acceso en el código."
+  },
+  {
+   "level": 2,
+   "text": "¿Para qué sirve Amazon CloudWatch?",
+   "choices": [
+    "Monitorizar métricas, logs y alarmas",
+    "Almacenar objetos",
+    "Gestionar DNS",
+    "Crear VPNs"
+   ],
+   "answer": 0,
+   "explanation": "Permite lanzar acciones cuando se supera un umbral."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es Amazon Route 53?",
+   "choices": [
+    "El servicio de DNS de AWS",
+    "Un servicio de colas",
+    "Un almacenamiento",
+    "Una base de datos"
+   ],
+   "answer": 0,
+   "explanation": "También permite comprobaciones de salud y enrutado."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es el principio de mínimo privilegio?",
+   "choices": [
+    "Quitar todos los permisos",
+    "Dar permisos de administrador a todos",
+    "Dar solo los permisos estrictamente necesarios",
+    "Compartir una cuenta"
+   ],
+   "answer": 2,
+   "explanation": "Reduce el daño si una credencial se compromete."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es Amazon DynamoDB?",
+   "choices": [
+    "Una base de datos relacional",
+    "Un sistema de archivos",
+    "Un balanceador",
+    "Una base de datos NoSQL clave valor totalmente gestionada"
+   ],
+   "answer": 3,
+   "explanation": "Escala con baja latencia."
+  },
+  {
+   "level": 3,
+   "text": "¿Para qué sirve un balanceador de carga (ELB)?",
+   "choices": [
+    "Cifrar los discos",
+    "Gestionar usuarios",
+    "Crear backups",
+    "Repartir el tráfico entre varias instancias"
+   ],
+   "answer": 3,
+   "explanation": "Mejora disponibilidad y escalabilidad."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace el Auto Scaling?",
+   "choices": [
+    "Ajusta automáticamente el número de instancias según la demanda",
+    "Hace copias de seguridad",
+    "Cambia de región",
+    "Cifra los datos"
+   ],
+   "answer": 0,
+   "explanation": "Se basa en métricas y políticas."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué diferencia hay entre una subred pública y una privada?",
+   "choices": [
+    "La privada es más rápida",
+    "La pública tiene ruta a un internet gateway y la privada no",
+    "La pública no tiene IP",
+    "No hay diferencia"
+   ],
+   "answer": 1,
+   "explanation": "Las bases de datos suelen ir en subredes privadas."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué clases de almacenamiento ofrece S3 para ahorrar costes en datos poco usados?",
+   "choices": [
+    "RDS y Aurora",
+    "EBS y EFS",
+    "Solo S3 Standard",
+    "S3 Standard-IA y S3 Glacier"
+   ],
+   "answer": 3,
+   "explanation": "Cuanto menos se accede, más barato el almacenamiento."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es Amazon EBS?",
+   "choices": [
+    "Un servicio de DNS",
+    "Volúmenes de bloque para instancias EC2",
+    "Almacenamiento de objetos",
+    "Una red CDN"
+   ],
+   "answer": 1,
+   "explanation": "Se comporta como un disco duro conectado."
+  },
+  {
+   "level": 3,
+   "text": "¿Para qué sirve Amazon SQS?",
+   "choices": [
+    "Gestionar DNS",
+    "Monitorizar costes",
+    "Colas de mensajes para desacoplar componentes",
+    "Almacenar archivos"
+   ],
+   "answer": 2,
+   "explanation": "El productor y el consumidor no tienen que estar disponibles a la vez."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es Amazon CloudFront?",
+   "choices": [
+    "Una red de distribución de contenido (CDN)",
+    "Un servicio de colas",
+    "Una base de datos",
+    "Un firewall"
+   ],
+   "answer": 0,
+   "explanation": "Sirve el contenido desde ubicaciones cercanas al usuario."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué modelo de responsabilidad compartida aplica AWS?",
+   "choices": [
+    "El cliente se encarga de todo",
+    "Nadie es responsable de los datos",
+    "AWS se encarga de todo",
+    "AWS protege la nube y el cliente protege lo que pone en la nube"
+   ],
+   "answer": 3,
+   "explanation": "Los datos y los permisos son responsabilidad del cliente."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué diferencia hay entre una instancia reservada y una Spot?",
+   "choices": [
+    "La reservada se paga por segundo sin compromiso",
+    "La reservada da descuento por compromiso y la Spot usa capacidad sobrante con riesgo de interrupción",
+    "La Spot no se puede interrumpir",
+    "Son iguales"
+   ],
+   "answer": 1,
+   "explanation": "Spot es ideal para trabajos tolerantes a interrupciones."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es una configuración Multi-AZ en RDS?",
+   "choices": [
+    "Una réplica de lectura para escalar",
+    "Un backup manual",
+    "Una base en otra región",
+    "Una réplica en otra zona para alta disponibilidad con conmutación automática"
+   ],
+   "answer": 3,
+   "explanation": "Las réplicas de lectura sirven para escalar lecturas."
+  },
+  {
+   "level": 4,
+   "text": "¿Para qué sirve AWS CloudFormation?",
+   "choices": [
+    "Gestionar usuarios",
+    "Balancear carga",
+    "Monitorizar logs",
+    "Definir y crear infraestructura mediante plantillas"
+   ],
+   "answer": 3,
+   "explanation": "Es infraestructura como código."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace un NAT Gateway?",
+   "choices": [
+    "Permite que instancias de subredes privadas salgan a internet sin ser accesibles desde fuera",
+    "Crea un DNS",
+    "Balancea la carga",
+    "Cifra el tráfico"
+   ],
+   "answer": 0,
+   "explanation": "Solo permite conexiones iniciadas desde dentro."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué diferencia hay entre un grupo de seguridad y una ACL de red?",
+   "choices": [
+    "Ambos son sin estado",
+    "El grupo de seguridad es con estado y la ACL no lo tiene",
+    "Ambos son con estado",
+    "La ACL es con estado"
+   ],
+   "answer": 1,
+   "explanation": "Con estado significa que la respuesta se permite automáticamente."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es Amazon SNS?",
+   "choices": [
+    "Un balanceador",
+    "Un servicio de notificaciones publicación suscripción",
+    "Una base de datos",
+    "Un sistema de archivos"
+   ],
+   "answer": 1,
+   "explanation": "Envía mensajes a varios suscriptores a la vez."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué ventaja da una política de ciclo de vida en S3?",
+   "choices": [
+    "Mover o borrar objetos automáticamente según su antigüedad",
+    "Cifrar los objetos",
+    "Replicar entre regiones",
+    "Cambiar el nombre"
+   ],
+   "answer": 0,
+   "explanation": "Reduce costes sin intervención manual."
+  },
+  {
+   "level": 4,
+   "text": "¿Para qué sirve AWS KMS?",
+   "choices": [
+    "Crear y gestionar claves de cifrado",
+    "Almacenar objetos",
+    "Monitorizar costes",
+    "Gestionar redes"
+   ],
+   "answer": 0,
+   "explanation": "Se integra con S3, EBS y RDS."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es el objetivo de tiempo de recuperación (RTO)?",
+   "choices": [
+    "El coste del backup",
+    "El número de réplicas",
+    "La cantidad máxima de datos perdidos",
+    "El tiempo máximo aceptable para restaurar el servicio tras un fallo"
+   ],
+   "answer": 3,
+   "explanation": "RPO es la pérdida de datos aceptable."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué estrategia de recuperación ante desastres mantiene una versión reducida siempre en marcha en otra región?",
+   "choices": [
+    "Backup and restore",
+    "Pilot light",
+    "Cold standby sin recursos",
+    "Multi-site activo activo"
+   ],
+   "answer": 1,
+   "explanation": "Se amplía cuando ocurre el desastre."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué diferencia hay entre una política basada en identidad y una basada en recurso?",
+   "choices": [
+    "La de identidad solo existe en S3",
+    "Son iguales",
+    "La de recurso se adjunta a usuarios",
+    "La de identidad se adjunta a un usuario o rol y la de recurso al propio recurso, como un bucket"
+   ],
+   "answer": 3,
+   "explanation": "Las políticas de bucket son un ejemplo de política de recurso."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué ofrece AWS Organizations?",
+   "choices": [
+    "Gestionar varias cuentas con facturación y políticas centralizadas",
+    "Crear bases de datos",
+    "Gestionar solo usuarios",
+    "Balancear carga"
+   ],
+   "answer": 0,
+   "explanation": "Las SCP limitan los permisos máximos de cada cuenta."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué ventaja tiene una arquitectura dirigida por eventos con SQS y Lambda?",
+   "choices": [
+    "Elimina los costes por completo",
+    "Escala y se desacopla sin gestionar servidores",
+    "Garantiza cero latencia",
+    "Evita todo tipo de fallos"
+   ],
+   "answer": 1,
+   "explanation": "Cada componente escala de forma independiente."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué pilar del Well-Architected Framework trata de ejecutar con el menor coste adecuado?",
+   "choices": [
+    "Excelencia operativa",
+    "Optimización de costes",
+    "Fiabilidad",
+    "Seguridad"
+   ],
+   "answer": 1,
+   "explanation": "Los otros pilares incluyen rendimiento y sostenibilidad."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace VPC Peering?",
+   "choices": [
+    "Conecta una VPC con internet",
+    "Conecta dos VPC para que se comuniquen por la red privada de AWS",
+    "Cifra el tráfico",
+    "Crea una subred"
+   ],
+   "answer": 1,
+   "explanation": "No es transitivo y los rangos de IP no pueden solaparse."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es la consistencia eventual en DynamoDB?",
+   "choices": [
+    "Solo hay una réplica",
+    "Las lecturas nunca son válidas",
+    "Los datos se pierden",
+    "Una lectura puede devolver datos ligeramente antiguos justo tras una escritura"
+   ],
+   "answer": 3,
+   "explanation": "Existe la opción de lectura fuertemente consistente a mayor coste."
+  }
+ ]
+}

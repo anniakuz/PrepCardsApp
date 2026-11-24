@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "text": "¿Cómo se imprime texto por pantalla en Python 3?",
+      "choices": [
+        "echo('hola')",
+        "print('hola')",
+        "console.log('hola')",
+        "printf('hola')"
+      ],
+      "answer": 1,
+      "explanation": "print es la función estándar de salida."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo de dato es [1, 2, 3]?",
+      "choices": [
+        "tuple",
+        "dict",
+        "set",
+        "list"
+      ],
+      "answer": 3,
+      "explanation": "Los corchetes crean una lista."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué símbolo inicia un comentario de una línea en Python?",
+      "choices": [
+        "//",
+        "--",
+        "#",
+        "/*"
+      ],
+      "answer": 2,
+      "explanation": "Todo lo que sigue a # en la línea se ignora."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué devuelve len('hola')?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "Da error"
+      ],
+      "answer": 1,
+      "explanation": "len cuenta los caracteres de la cadena."
+    },
+    {
+      "level": 2,
+      "text": "¿Cuál es la diferencia principal entre una lista y una tupla?",
+      "choices": [
+        "La tupla es mutable y la lista no",
+        "La lista es mutable y la tupla no",
+        "No hay diferencia",
+        "La tupla solo guarda números"
+      ],
+      "answer": 1,
+      "explanation": "Una tupla no se puede modificar después de crearla."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué genera range(3)?",
+      "choices": [
+        "1, 2, 3",
+        "0, 1, 2",
+        "0, 1, 2, 3",
+        "3 números aleatorios"
+      ],
+      "answer": 1,
+      "explanation": "range(n) empieza en 0 y termina en n - 1."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve with open('f.txt') as f?",
+      "choices": [
+        "Abre el archivo y lo cierra automáticamente al salir del bloque",
+        "Abre el archivo sin poder leerlo",
+        "Bloquea el archivo para siempre",
+        "Crea el archivo en memoria"
+      ],
+      "answer": 0,
+      "explanation": "El gestor de contexto garantiza el cierre aunque haya una excepción."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es una list comprehension?",
+      "choices": [
+        "Una forma de ordenar listas",
+        "Una sintaxis compacta para crear listas a partir de un iterable",
+        "Un tipo de excepción",
+        "Un método de list"
+      ],
+      "answer": 1,
+      "explanation": "Por ejemplo [x * 2 for x in numeros]."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué devuelve bool([])?",
+      "choices": [
+        "True",
+        "None",
+        "Da error",
+        "False"
+      ],
+      "answer": 3,
+      "explanation": "Las colecciones vacías se evalúan como falsas."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace yield dentro de una función?",
+      "choices": [
+        "Termina la función y devuelve una lista",
+        "Convierte la función en un generador que produce valores uno a uno",
+        "Lanza una excepción",
+        "Declara una variable global"
+      ],
+      "answer": 1,
+      "explanation": "El generador pausa su ejecución en cada yield y la retoma después."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué problema tiene def f(x, items=[])?",
+      "choices": [
+        "Ninguno",
+        "No se puede llamar sin items",
+        "items siempre vale None",
+        "La lista por defecto se crea una sola vez y se comparte entre llamadas"
+      ],
+      "answer": 3,
+      "explanation": "Los valores por defecto mutables se evalúan al definir la función."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace un decorador?",
+      "choices": [
+        "Convierte una clase en un módulo",
+        "Elimina una función de la memoria",
+        "Envuelve una función para añadirle comportamiento sin cambiar su código",
+        "Cambia el tipo de una variable"
+      ],
+      "answer": 2,
+      "explanation": "Un decorador recibe una función y devuelve otra función."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué efecto tiene el GIL de CPython en hilos con cálculo intensivo?",
+      "choices": [
+        "Permite que varios hilos ejecuten bytecode a la vez en varios núcleos",
+        "Solo un hilo ejecuta bytecode a la vez, así que no hay paralelismo real en CPU",
+        "Hace los hilos más rápidos que los procesos",
+        "Impide crear más de un hilo"
+      ],
+      "answer": 1,
+      "explanation": "Para paralelismo de CPU se usan procesos o extensiones que liberan el GIL."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace __slots__ en una clase?",
+      "choices": [
+        "Permite herencia múltiple",
+        "Evita usar __init__",
+        "Restringe los atributos de instancia y reduce el uso de memoria",
+        "Hace privados los atributos"
+      ],
+      "answer": 2,
+      "explanation": "Sin __dict__ por instancia se ahorra memoria y no se pueden añadir atributos nuevos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué diferencia hay entre asyncio.gather y hacer await de cada corrutina una tras otra?",
+      "choices": [
+        "gather las ejecuta de forma concurrente en el mismo bucle de eventos",
+        "gather crea un proceso por corrutina",
+        "No hay diferencia",
+        "gather bloquea el bucle de eventos"
+      ],
+      "answer": 0,
+      "explanation": "Con await secuencial cada una espera a que termine la anterior."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se crea una variable con el valor 5 en Python?",
+      "choices": [
+        "var x := 5",
+        "x = 5",
+        "int x = 5;",
+        "let x = 5"
+      ],
+      "answer": 1,
+      "explanation": "Python no necesita declarar el tipo."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué operador hace la división entera?",
+      "choices": [
+        "/",
+        "%",
+        "//",
+        "**"
+      ],
+      "answer": 2,
+      "explanation": "7 // 2 vale 3."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué operador eleva un número a una potencia?",
+      "choices": [
+        "^",
+        "//",
+        "%",
+        "**"
+      ],
+      "answer": 3,
+      "explanation": "2 ** 3 vale 8. El ^ es el XOR de bits."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué palabra clave define una función?",
+      "choices": [
+        "def",
+        "fn",
+        "function",
+        "func"
+      ],
+      "answer": 0,
+      "explanation": "def nombre(parametros): seguido de un bloque."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo de dato es 'hola'?",
+      "choices": [
+        "string",
+        "char",
+        "str",
+        "text"
+      ],
+      "answer": 2,
+      "explanation": "Python no tiene tipo char, un carácter es un str de longitud 1."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo delimita Python los bloques de código?",
+      "choices": [
+        "Con punto y coma",
+        "Con llaves {}",
+        "Con begin y end",
+        "Con la sangría"
+      ],
+      "answer": 3,
+      "explanation": "La sangría forma parte de la sintaxis."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué devuelve type(3.14)?",
+      "choices": [
+        "<class 'float'>",
+        "<class 'double'>",
+        "<class 'int'>",
+        "<class 'decimal'>"
+      ],
+      "answer": 0,
+      "explanation": "Python usa float para los decimales."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué hace input()?",
+      "choices": [
+        "Importa un módulo",
+        "Imprime un texto",
+        "Convierte a número",
+        "Lee texto que escribe el usuario"
+      ],
+      "answer": 3,
+      "explanation": "Siempre devuelve un str."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué estructura guarda pares clave valor?",
+      "choices": [
+        "list",
+        "tuple",
+        "set",
+        "dict"
+      ],
+      "answer": 3,
+      "explanation": "Se crea con {clave: valor}."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué devuelve 'a,b,c'.split(',')?",
+      "choices": [
+        "'abc'",
+        "['a,b,c']",
+        "('a', 'b', 'c')",
+        "['a', 'b', 'c']"
+      ],
+      "answer": 3,
+      "explanation": "split devuelve una lista de cadenas."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace lista.append(x)?",
+      "choices": [
+        "Elimina x",
+        "Añade x al principio",
+        "Añade x al final de la lista",
+        "Ordena la lista"
+      ],
+      "answer": 2,
+      "explanation": "Modifica la lista y no devuelve nada."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué imprime print(2 ** 3)?",
+      "choices": [
+        "8",
+        "9",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "** es la potencia."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se importa solo la función sqrt del módulo math?",
+      "choices": [
+        "using math.sqrt",
+        "include math sqrt",
+        "from math import sqrt",
+        "import sqrt from math"
+      ],
+      "answer": 2,
+      "explanation": "Después se usa sqrt(9) sin prefijo."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué estructura no permite elementos duplicados?",
+      "choices": [
+        "str",
+        "tuple",
+        "set",
+        "list"
+      ],
+      "answer": 2,
+      "explanation": "Un set descarta repetidos y no tiene orden garantizado."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace el método strip() de un string?",
+      "choices": [
+        "Divide el texto",
+        "Quita los espacios del principio y del final",
+        "Convierte a mayúsculas",
+        "Quita todos los espacios"
+      ],
+      "answer": 1,
+      "explanation": "También quita saltos de línea y tabulaciones."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué palabra clave captura excepciones?",
+      "choices": [
+        "handle",
+        "except",
+        "rescue",
+        "catch"
+      ],
+      "answer": 1,
+      "explanation": "Se usa dentro de try ... except."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué recoge *args en la definición de una función?",
+      "choices": [
+        "Los argumentos con nombre, en un diccionario",
+        "Un puntero a los argumentos",
+        "Los argumentos posicionales extra, en una tupla",
+        "El producto de los argumentos"
+      ],
+      "answer": 2,
+      "explanation": "El nombre args es una convención."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué recoge **kwargs?",
+      "choices": [
+        "Los argumentos posicionales, en una tupla",
+        "Los valores por defecto",
+        "Los argumentos con nombre extra, en un diccionario",
+        "Las excepciones de la función"
+      ],
+      "answer": 2,
+      "explanation": "kwargs viene de keyword arguments."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué diferencia hay entre is y == ?",
+      "choices": [
+        "is compara identidad y == compara valor",
+        "Son iguales",
+        "is compara valor y == compara identidad",
+        "is solo funciona con números"
+      ],
+      "answer": 0,
+      "explanation": "Dos listas iguales en contenido son == pero no is."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace enumerate(lista)?",
+      "choices": [
+        "Ordena la lista",
+        "Devuelve pares (índice, elemento)",
+        "Elimina duplicados",
+        "Cuenta los elementos"
+      ],
+      "answer": 1,
+      "explanation": "Es útil en bucles for."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué devuelve [1, 2, 3][-1]?",
+      "choices": [
+        "3",
+        "Da error",
+        "2",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "Los índices negativos cuentan desde el final."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace d.get('k', 0) si la clave no existe?",
+      "choices": [
+        "Devuelve 0",
+        "Devuelve None",
+        "Lanza KeyError",
+        "Crea la clave con 0"
+      ],
+      "answer": 0,
+      "explanation": "El segundo argumento es el valor por defecto."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve if __name__ == '__main__':?",
+      "choices": [
+        "Para importar el archivo",
+        "Para definir la clase principal",
+        "Para ejecutar código solo cuando el archivo se ejecuta directamente",
+        "Para ejecutar en segundo plano"
+      ],
+      "answer": 2,
+      "explanation": "Al importar el módulo, ese bloque no se ejecuta."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es una f-string?",
+      "choices": [
+        "Una función de formato antigua",
+        "Una cadena con expresiones entre llaves, como f'Hola {nombre}'",
+        "Una cadena inmutable especial",
+        "Una cadena binaria"
+      ],
+      "answer": 1,
+      "explanation": "Se evalúan al crear la cadena."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué diferencia hay entre copy y deepcopy?",
+      "choices": [
+        "deepcopy copia también los objetos anidados",
+        "copy copia los anidados y deepcopy no",
+        "deepcopy solo sirve con listas de enteros",
+        "Son iguales"
+      ],
+      "answer": 0,
+      "explanation": "Con copy, los objetos internos se comparten."
+    },
+    {
+      "level": 4,
+      "text": "¿Para qué sirve __repr__?",
+      "choices": [
+        "Destruye el objeto",
+        "Da la representación del objeto pensada para desarrolladores",
+        "Compara dos objetos",
+        "Convierte el objeto a entero"
+      ],
+      "answer": 1,
+      "explanation": "Idealmente, repr permite reconstruir el objeto."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es una clausura (closure)?",
+      "choices": [
+        "Una clase abstracta",
+        "Un bloque try que se cierra solo",
+        "Una función sin parámetros",
+        "Una función que recuerda variables del ámbito donde se definió"
+      ],
+      "answer": 3,
+      "explanation": "Es la base de muchos decoradores."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué ventaja tiene un generador frente a una lista?",
+      "choices": [
+        "Siempre es más rápido",
+        "Produce los valores bajo demanda sin guardarlos todos en memoria",
+        "Se puede recorrer varias veces",
+        "Permite acceso por índice"
+      ],
+      "answer": 1,
+      "explanation": "Un generador se agota tras recorrerlo."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace @staticmethod?",
+      "choices": [
+        "Hace el método privado",
+        "Define un método que recibe cls",
+        "Cachea el resultado",
+        "Define un método que no recibe self ni cls"
+      ],
+      "answer": 3,
+      "explanation": "Se comporta como una función dentro de la clase."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué son __enter__ y __exit__?",
+      "choices": [
+        "Los métodos de un iterador",
+        "Los métodos de la herencia múltiple",
+        "Los métodos que hacen que un objeto se pueda usar con with",
+        "Los métodos de un decorador de clase"
+      ],
+      "answer": 2,
+      "explanation": "__exit__ se ejecuta aunque haya una excepción."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace sorted(lista, key=len)?",
+      "choices": [
+        "Devuelve las longitudes",
+        "Devuelve una lista nueva ordenada por la longitud de cada elemento",
+        "Ordena alfabéticamente",
+        "Ordena la lista original"
+      ],
+      "answer": 1,
+      "explanation": "key recibe una función que da el criterio de orden."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace functools.lru_cache?",
+      "choices": [
+        "Cierra archivos automáticamente",
+        "Memoriza los resultados de una función según sus argumentos",
+        "Ordena los resultados",
+        "Limita el número de hilos"
+      ],
+      "answer": 1,
+      "explanation": "Los argumentos deben ser hashables."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es el MRO en Python?",
+      "choices": [
+        "Un tipo de excepción",
+        "El orden de importación de módulos",
+        "El orden en que se buscan los métodos entre las clases base",
+        "Un módulo de gestión de memoria"
+      ],
+      "answer": 2,
+      "explanation": "Se calcula con el algoritmo C3 y se ve con Clase.__mro__."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es una metaclase?",
+      "choices": [
+        "Un decorador de funciones",
+        "Una clase cuyas instancias son clases",
+        "Una clase abstracta",
+        "Una clase con solo métodos estáticos"
+      ],
+      "answer": 1,
+      "explanation": "type es la metaclase por defecto."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué diferencia hay entre threading y multiprocessing en tareas de CPU?",
+      "choices": [
+        "multiprocessing usa procesos y evita el GIL, threading no da paralelismo de CPU",
+        "threading da paralelismo real de CPU",
+        "multiprocessing comparte memoria siempre sin copias",
+        "Son idénticos"
+      ],
+      "answer": 0,
+      "explanation": "Con procesos hay que serializar los datos que se pasan."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace await dentro de una corrutina?",
+      "choices": [
+        "Crea un hilo nuevo",
+        "Cede el control al bucle de eventos hasta que el resultado esté listo",
+        "Ejecuta la corrutina en otro proceso",
+        "Bloquea todo el programa"
+      ],
+      "answer": 1,
+      "explanation": "Así otras corrutinas avanzan mientras se espera."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es un descriptor?",
+      "choices": [
+        "Un objeto con __get__, __set__ o __delete__ que controla el acceso a un atributo",
+        "Un tipo de iterador",
+        "Una cadena con documentación",
+        "Un decorador de clase"
+      ],
+      "answer": 0,
+      "explanation": "property y los métodos funcionan con descriptores."
+    },
+    {
+      "level": 5,
+      "text": "¿Cómo gestiona CPython la memoria?",
+      "choices": [
+        "Con liberación manual",
+        "Con conteo de referencias y un recolector de ciclos",
+        "Solo con mark and sweep",
+        "Sin liberar nunca la memoria"
+      ],
+      "answer": 1,
+      "explanation": "El recolector de ciclos resuelve referencias circulares."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué se exige a un objeto hashable?",
+      "choices": [
+        "Que su hash no cambie durante su vida y sea coherente con __eq__",
+        "Que ocupe poca memoria",
+        "Que sea mutable",
+        "Que se pueda iterar"
+      ],
+      "answer": 0,
+      "explanation": "Por eso las listas no son hashables y las tuplas de inmutables sí."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es typing.Protocol?",
+      "choices": [
+        "Una forma de forzar la herencia",
+        "Una clase abstracta obligatoria",
+        "Tipado estructural: vale cualquier clase que tenga los métodos requeridos",
+        "Un protocolo de red"
+      ],
+      "answer": 2,
+      "explanation": "Es un tipado tipo duck typing comprobable por herramientas."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué función muestra texto por pantalla en Python?",
+      "choices": [
+        "print",
+        "echo",
+        "show",
+        "console.log"
+      ],
+      "answer": 0,
+      "explanation": "print escribe en la salida estándar."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo de dato es 3.14?",
+      "choices": [
+        "int",
+        "str",
+        "float",
+        "decimalstr"
+      ],
+      "answer": 2,
+      "explanation": "Los números con parte decimal son float."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se escribe un comentario de una línea?",
+      "choices": [
+        "// comentario",
+        "# comentario",
+        "<!-- comentario -->",
+        "/* comentario */"
+      ],
+      "answer": 1,
+      "explanation": "Todo lo que sigue a # se ignora."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué devuelve len(\"hola\")?",
+      "choices": [
+        "3",
+        "5",
+        "hola",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "len cuenta los caracteres."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué diferencia hay entre lista y tupla?",
+      "choices": [
+        "La lista es inmutable",
+        "La tupla es más lenta siempre",
+        "La tupla es inmutable",
+        "No hay ninguna"
+      ],
+      "answer": 2,
+      "explanation": "Las tuplas no se pueden modificar tras crearlas."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué método añade un elemento al final de una lista?",
+      "choices": [
+        "add",
+        "push_back",
+        "insert_end",
+        "append"
+      ],
+      "answer": 3,
+      "explanation": "append modifica la lista en su sitio."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace el operador //?",
+      "choices": [
+        "División entera hacia abajo",
+        "División con decimales",
+        "Resto de la división",
+        "Potencia"
+      ],
+      "answer": 0,
+      "explanation": "7 // 2 vale 3."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve with al abrir un archivo?",
+      "choices": [
+        "Cierra el archivo automáticamente al salir del bloque",
+        "Lo abre en modo lectura siempre",
+        "Lo copia en memoria",
+        "Evita errores de permisos"
+      ],
+      "answer": 0,
+      "explanation": "Usa el protocolo de gestores de contexto."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué recoge *args en una función?",
+      "choices": [
+        "Los argumentos con nombre en un dict",
+        "Los argumentos posicionales extra en una tupla",
+        "Solo el primer argumento",
+        "Los valores por defecto"
+      ],
+      "answer": 1,
+      "explanation": "**kwargs recoge los argumentos con nombre."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace yield en una función?",
+      "choices": [
+        "Termina el programa",
+        "Lanza una excepción",
+        "Imprime el valor",
+        "La convierte en un generador que devuelve valores uno a uno"
+      ],
+      "answer": 3,
+      "explanation": "El estado se conserva entre llamadas."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué diferencia hay entre is y ==?",
+      "choices": [
+        "is compara identidad y == compara valor",
+        "Son equivalentes",
+        "is compara valor y == identidad",
+        "is solo sirve con números"
+      ],
+      "answer": 0,
+      "explanation": "Dos listas iguales no son el mismo objeto."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es el GIL de CPython?",
+      "choices": [
+        "Un recolector de basura",
+        "Un gestor de paquetes",
+        "Un bloqueo que permite ejecutar bytecode a un solo hilo a la vez",
+        "Una librería de red"
+      ],
+      "answer": 2,
+      "explanation": "Limita el paralelismo real con hilos en tareas de CPU."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué método se ejecuta al entrar en un bloque with?",
+      "choices": [
+        "__init__",
+        "__open__",
+        "__start__",
+        "__enter__"
+      ],
+      "answer": 3,
+      "explanation": "Al salir se llama a __exit__."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué pasa con def f(x=[]) si se modifica la lista?",
+      "choices": [
+        "Se crea una lista nueva en cada llamada",
+        "La lista se crea una vez y se comparte entre llamadas",
+        "Lanza un error",
+        "La lista se borra al terminar"
+      ],
+      "answer": 1,
+      "explanation": "Es una trampa clásica de los valores por defecto mutables."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace asyncio.gather?",
+      "choices": [
+        "Crea hilos del sistema operativo",
+        "Ejecuta varias corrutinas de forma concurrente y devuelve sus resultados en orden",
+        "Bloquea hasta que termina la primera",
+        "Cancela las corrutinas"
+      ],
+      "answer": 1,
+      "explanation": "Los resultados siguen el orden de los argumentos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué define el MRO (method resolution order)?",
+      "choices": [
+        "El orden de importación de módulos",
+        "La prioridad de los hilos",
+        "El orden de los decoradores",
+        "El orden en que Python busca métodos en la herencia"
+      ],
+      "answer": 3,
+      "explanation": "Usa el algoritmo C3."
+    },
+    {
+      "level": 5,
+      "text": "¿Cuándo se invoca __getattr__?",
+      "choices": [
+        "Cuando un atributo no se encuentra por el camino normal",
+        "Siempre que se lee un atributo",
+        "Al crear el objeto",
+        "Al borrar un atributo"
+      ],
+      "answer": 0,
+      "explanation": "__getattribute__ sí se llama en todos los accesos."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué función convierte un texto en un entero?",
+      "choices": [
+        "int()",
+        "str()",
+        "float()",
+        "num()"
+      ],
+      "answer": 0,
+      "explanation": "int(\"5\") devuelve 5."
+    },
+    {
+      "level": 1,
+      "text": "¿Cuánto vale 2 ** 3?",
+      "choices": [
+        "6",
+        "5",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "** es el operador de potencia."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué método separa un texto en una lista de palabras?",
+      "choices": [
+        "join",
+        "split",
+        "strip",
+        "slice"
+      ],
+      "answer": 1,
+      "explanation": "Por defecto separa por espacios."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué estructura elimina los elementos duplicados?",
+      "choices": [
+        "tuple",
+        "list",
+        "dict",
+        "set"
+      ],
+      "answer": 3,
+      "explanation": "Un conjunto no admite repetidos."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué devuelve enumerate en un bucle for?",
+      "choices": [
+        "El índice y el elemento",
+        "Solo el índice",
+        "Solo el elemento",
+        "La longitud de la lista"
+      ],
+      "answer": 0,
+      "explanation": "for i, x in enumerate(lista)."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve if __name__ == \"__main__\"?",
+      "choices": [
+        "Importar módulos",
+        "Declarar la función principal obligatoria",
+        "Ejecutar código solo cuando el archivo se lanza directamente",
+        "Evitar errores de sintaxis"
+      ],
+      "answer": 2,
+      "explanation": "No se ejecuta al importar el módulo."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué diferencia hay entre un iterable y un iterador?",
+      "choices": [
+        "Son lo mismo",
+        "El iterador implementa __next__ y el iterable produce uno con iter()",
+        "El iterable solo existe en listas",
+        "El iterador siempre es infinito"
+      ],
+      "answer": 1,
+      "explanation": "Una lista es iterable pero no un iterador."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué genera el decorador @dataclass?",
+      "choices": [
+        "Métodos como __init__, __repr__ y __eq__ a partir de los atributos",
+        "Una base de datos",
+        "Una clase abstracta",
+        "Una interfaz gráfica"
+      ],
+      "answer": 0,
+      "explanation": "Reduce el código repetitivo de las clases de datos."
+    }
+  ]
+}

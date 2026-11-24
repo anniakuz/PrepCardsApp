@@ -1,0 +1,484 @@
+{
+ "questions": [
+  {
+   "level": 1,
+   "text": "¿Qué comando muestra el directorio actual?",
+   "choices": [
+    "where",
+    "cd",
+    "pwd",
+    "ls"
+   ],
+   "answer": 2,
+   "explanation": "pwd significa print working directory."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando lista los archivos de un directorio?",
+   "choices": [
+    "show",
+    "ls",
+    "files",
+    "list"
+   ],
+   "answer": 1,
+   "explanation": "Con ls -l se ve el detalle."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando cambia de directorio?",
+   "choices": [
+    "chdir",
+    "cd",
+    "mv",
+    "go"
+   ],
+   "answer": 1,
+   "explanation": "cd .. sube un nivel."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando crea un directorio?",
+   "choices": [
+    "mkfile",
+    "touch",
+    "mkdir",
+    "newdir"
+   ],
+   "answer": 2,
+   "explanation": "touch crea un archivo vacío."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando muestra el contenido de un archivo?",
+   "choices": [
+    "show",
+    "cat",
+    "print",
+    "open"
+   ],
+   "answer": 1,
+   "explanation": "Para archivos largos se usa less."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando copia archivos?",
+   "choices": [
+    "copy",
+    "cp",
+    "dup",
+    "mv"
+   ],
+   "answer": 1,
+   "explanation": "mv mueve o renombra."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué comando borra un archivo?",
+   "choices": [
+    "rm",
+    "del",
+    "erase",
+    "remove"
+   ],
+   "answer": 0,
+   "explanation": "rm -r borra directorios con su contenido."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué significa ~ en una ruta?",
+   "choices": [
+    "El directorio raíz",
+    "El directorio temporal",
+    "El directorio personal del usuario",
+    "El directorio actual"
+   ],
+   "answer": 2,
+   "explanation": "Por ejemplo, ~/Descargas."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace chmod +x script.sh?",
+   "choices": [
+    "Lo comprime",
+    "Da permiso de ejecución al archivo",
+    "Lo borra",
+    "Cambia su dueño"
+   ],
+   "answer": 1,
+   "explanation": "Después se puede lanzar con ./script.sh."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué comando busca texto dentro de archivos?",
+   "choices": [
+    "search",
+    "find",
+    "grep",
+    "locate"
+   ],
+   "answer": 2,
+   "explanation": "find busca archivos por nombre u otras propiedades."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace el pipe | entre dos comandos?",
+   "choices": [
+    "Ejecuta ambos sin relación",
+    "Pasa la salida del primero como entrada del segundo",
+    "Detiene el primero",
+    "Guarda la salida en un archivo"
+   ],
+   "answer": 1,
+   "explanation": "Por ejemplo, ls | wc -l."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace > en ls > lista.txt?",
+   "choices": [
+    "Redirige la salida a un archivo, sobrescribiéndolo",
+    "Lee del archivo",
+    "Añade al final del archivo",
+    "Compara dos archivos"
+   ],
+   "answer": 0,
+   "explanation": "Para añadir se usa >>."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué comando muestra los procesos en ejecución?",
+   "choices": [
+    "tasks",
+    "ps",
+    "proc",
+    "run"
+   ],
+   "answer": 1,
+   "explanation": "ps aux lista todos los procesos."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué comando muestra el espacio libre en los discos?",
+   "choices": [
+    "space",
+    "du",
+    "df",
+    "free"
+   ],
+   "answer": 2,
+   "explanation": "du mide lo que ocupa un directorio y free la memoria."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace sudo?",
+   "choices": [
+    "Borra un usuario",
+    "Ejecuta un comando con los privilegios de otro usuario, normalmente root",
+    "Cambia la contraseña",
+    "Apaga el sistema"
+   ],
+   "answer": 1,
+   "explanation": "Evita trabajar siempre como root."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué comando muestra las primeras líneas de un archivo?",
+   "choices": [
+    "start",
+    "head",
+    "first",
+    "top"
+   ],
+   "answer": 1,
+   "explanation": "Por defecto muestra 10 líneas."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué significan los permisos rwxr-xr--?",
+   "choices": [
+    "Solo el dueño puede leer",
+    "El dueño lee, escribe y ejecuta, el grupo lee y ejecuta y el resto solo lee",
+    "Todos pueden escribir",
+    "El grupo puede escribir"
+   ],
+   "answer": 1,
+   "explanation": "Se leen en tres bloques: dueño, grupo y otros."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué número octal equivale a rw-r--r--?",
+   "choices": [
+    "777",
+    "644",
+    "755",
+    "600"
+   ],
+   "answer": 1,
+   "explanation": "4 es lectura, 2 escritura y 1 ejecución."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace kill -9 PID?",
+   "choices": [
+    "Le pide terminar con calma",
+    "Termina el proceso de forma forzada con SIGKILL",
+    "Lo reinicia",
+    "Lo pausa"
+   ],
+   "answer": 1,
+   "explanation": "El proceso no puede ignorar esta señal."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué comando muestra las últimas líneas de un log y sigue mostrando las nuevas?",
+   "choices": [
+    "less -k",
+    "cat -f",
+    "tail -f",
+    "head -f"
+   ],
+   "answer": 2,
+   "explanation": "Es muy usado para vigilar logs."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es un enlace simbólico?",
+   "choices": [
+    "Un archivo que apunta a la ruta de otro archivo o directorio",
+    "Una copia del archivo",
+    "Un permiso especial",
+    "Un archivo comprimido"
+   ],
+   "answer": 0,
+   "explanation": "Se crea con ln -s."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué variable de entorno lista los directorios donde se buscan los ejecutables?",
+   "choices": [
+    "BIN",
+    "SHELL",
+    "PATH",
+    "HOME"
+   ],
+   "answer": 2,
+   "explanation": "Se separan con dos puntos."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace find / -name '*.log'?",
+   "choices": [
+    "Muestra el contenido de los logs",
+    "Comprime los logs",
+    "Busca archivos terminados en .log desde la raíz",
+    "Borra los logs"
+   ],
+   "answer": 2,
+   "explanation": "Con -exec se puede actuar sobre cada resultado."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace wc -l archivo?",
+   "choices": [
+    "Borra líneas",
+    "Cuenta las palabras",
+    "Cuenta los bytes",
+    "Cuenta las líneas del archivo"
+   ],
+   "answer": 3,
+   "explanation": "-w cuenta palabras y -c bytes."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace awk '{print $1}' archivo?",
+   "choices": [
+    "Ordena el archivo",
+    "Cuenta las columnas",
+    "Imprime la primera línea",
+    "Imprime la primera columna de cada línea"
+   ],
+   "answer": 3,
+   "explanation": "awk separa los campos por espacios."
+  },
+  {
+   "level": 4,
+   "text": "¿Cómo se lanza un proceso en segundo plano?",
+   "choices": [
+    "Con # al final",
+    "Añadiendo & al final del comando",
+    "Con sudo delante",
+    "Con nohup siempre es obligatorio"
+   ],
+   "answer": 1,
+   "explanation": "Libera la terminal mientras el proceso sigue."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace systemctl restart nginx?",
+   "choices": [
+    "Reinicia el servidor entero",
+    "Borra su configuración",
+    "Instala nginx",
+    "Reinicia el servicio nginx gestionado por systemd"
+   ],
+   "answer": 3,
+   "explanation": "systemctl status muestra su estado."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es cron?",
+   "choices": [
+    "Un monitor de red",
+    "Un gestor de paquetes",
+    "Un tipo de archivo",
+    "Un planificador que ejecuta tareas a horas programadas"
+   ],
+   "answer": 3,
+   "explanation": "Las tareas se definen en el crontab."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué muestra free -h?",
+   "choices": [
+    "El espacio en disco",
+    "Los usuarios conectados",
+    "El uso de memoria RAM y swap",
+    "Los procesos"
+   ],
+   "answer": 2,
+   "explanation": "-h muestra tamaños legibles."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace 2>&1?",
+   "choices": [
+    "Suma dos números",
+    "Redirige el error estándar a donde va la salida estándar",
+    "Borra los errores",
+    "Ejecuta el comando dos veces"
+   ],
+   "answer": 1,
+   "explanation": "Permite capturar salida y errores juntos."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace chown usuario:grupo archivo?",
+   "choices": [
+    "Cambia el propietario y el grupo del archivo",
+    "Cambia el contenido",
+    "Cambia el nombre",
+    "Cambia los permisos"
+   ],
+   "answer": 0,
+   "explanation": "Suele requerir sudo."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué contiene el directorio /etc?",
+   "choices": [
+    "Los dispositivos",
+    "Los programas del usuario",
+    "Los archivos de configuración del sistema",
+    "Los archivos temporales"
+   ],
+   "answer": 2,
+   "explanation": "Por ejemplo, /etc/hosts o /etc/passwd."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es un inodo?",
+   "choices": [
+    "Un usuario",
+    "Un tipo de enlace",
+    "Una estructura del sistema de archivos con los metadatos de un archivo",
+    "Un proceso"
+   ],
+   "answer": 2,
+   "explanation": "Guarda permisos, dueño y ubicación de los datos, pero no el nombre."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué diferencia hay entre un enlace duro y uno simbólico?",
+   "choices": [
+    "El simbólico comparte inodo",
+    "No hay diferencia",
+    "El duro apunta al mismo inodo y el simbólico a una ruta",
+    "El duro puede apuntar a otra partición"
+   ],
+   "answer": 2,
+   "explanation": "Un enlace duro no puede cruzar sistemas de archivos."
+  },
+  {
+   "level": 5,
+   "text": "¿Para qué sirven los cgroups?",
+   "choices": [
+    "Montar particiones",
+    "Limitar y controlar recursos como CPU y memoria de un grupo de procesos",
+    "Gestionar usuarios",
+    "Cifrar el disco"
+   ],
+   "answer": 1,
+   "explanation": "Son la base de los límites en contenedores."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es un proceso zombi?",
+   "choices": [
+    "Un proceso de otro usuario",
+    "Uno que ha terminado pero cuyo padre aún no ha recogido su estado",
+    "Un proceso colgado en un bucle",
+    "Un proceso sin permisos"
+   ],
+   "answer": 1,
+   "explanation": "No consume CPU, pero ocupa una entrada en la tabla de procesos."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace strace?",
+   "choices": [
+    "Traza rutas de red",
+    "Muestra las llamadas al sistema que hace un proceso",
+    "Mide el disco",
+    "Compila programas"
+   ],
+   "answer": 1,
+   "explanation": "Es muy útil para depurar problemas de permisos o archivos."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué señal envía Ctrl+C a un proceso?",
+   "choices": [
+    "SIGINT",
+    "SIGHUP",
+    "SIGSTOP",
+    "SIGKILL"
+   ],
+   "answer": 0,
+   "explanation": "El proceso puede capturarla y terminar con orden."
+  },
+  {
+   "level": 5,
+   "text": "¿Para qué se usan iptables o nftables?",
+   "choices": [
+    "Para filtrar y manipular el tráfico de red en el kernel",
+    "Para montar discos",
+    "Para planificar tareas",
+    "Para gestionar paquetes de software"
+   ],
+   "answer": 0,
+   "explanation": "Son la base de muchos cortafuegos."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué indica un load average de 4.0 en una máquina de 4 núcleos?",
+   "choices": [
+    "Que la CPU está aproximadamente al límite de su capacidad",
+    "Que hay 4 usuarios conectados",
+    "Que está sin uso",
+    "Que hay un fallo"
+   ],
+   "answer": 0,
+   "explanation": "Por encima del número de núcleos, los procesos esperan turno."
+  }
+ ]
+}

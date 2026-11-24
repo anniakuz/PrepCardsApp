@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "text": "¿Qué es JSX?",
+      "choices": [
+        "Un lenguaje de bases de datos",
+        "Una extensión de sintaxis que permite escribir marcado dentro de JavaScript",
+        "Un framework CSS",
+        "Un servidor de desarrollo"
+      ],
+      "answer": 1,
+      "explanation": "JSX se transforma en llamadas a funciones de JavaScript."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se llama el bloque de construcción básico de una interfaz en React?",
+      "choices": [
+        "Componente",
+        "Tabla",
+        "Servicio",
+        "Controlador"
+      ],
+      "answer": 0,
+      "explanation": "Las interfaces de React se construyen combinando componentes."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se pasan datos de un componente padre a un hijo?",
+      "choices": [
+        "Con cookies",
+        "Con SQL",
+        "Con props",
+        "Con un archivo"
+      ],
+      "answer": 2,
+      "explanation": "Las props son los argumentos del componente."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hook guarda estado en un componente funcional?",
+      "choices": [
+        "useRef",
+        "useState",
+        "useMemo",
+        "useId"
+      ],
+      "answer": 1,
+      "explanation": "useState devuelve el valor y una función para cambiarlo."
+    },
+    {
+      "level": 2,
+      "text": "¿Para qué sirve la prop key en una lista?",
+      "choices": [
+        "Para aplicar estilos",
+        "Para cifrar los datos",
+        "Para que React identifique cada elemento entre renders",
+        "Para ordenar la lista"
+      ],
+      "answer": 2,
+      "explanation": "Una key estable evita errores y renders innecesarios al reordenar."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se maneja un clic en React?",
+      "choices": [
+        "onclick='fn()'",
+        "onClick={fn}",
+        "click={fn}",
+        "on-click='fn'"
+      ],
+      "answer": 1,
+      "explanation": "Los eventos usan camelCase y reciben una función."
+    },
+    {
+      "level": 3,
+      "text": "¿Cuándo se ejecuta un useEffect con el array de dependencias vacío []?",
+      "choices": [
+        "En cada render",
+        "Solo después del primer render",
+        "Nunca",
+        "Antes de cada render"
+      ],
+      "answer": 1,
+      "explanation": "Sin dependencias que cambien, solo se ejecuta al montar."
+    },
+    {
+      "level": 3,
+      "text": "¿Por qué no se debe mutar el estado directamente, por ejemplo state.push(x)?",
+      "choices": [
+        "React puede no detectar el cambio y no volver a renderizar",
+        "JavaScript lo prohíbe",
+        "Siempre es más lento",
+        "Borra las props"
+      ],
+      "answer": 0,
+      "explanation": "React compara referencias, así que hay que crear un array o un objeto nuevo."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace useMemo?",
+      "choices": [
+        "Guarda estado global",
+        "Memoriza el resultado de un cálculo mientras no cambien sus dependencias",
+        "Ejecuta un efecto secundario",
+        "Crea una referencia al DOM"
+      ],
+      "answer": 1,
+      "explanation": "Evita repetir cálculos costosos en cada render."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué problema resuelve useCallback?",
+      "choices": [
+        "Mantiene la identidad de una función entre renders si no cambian sus dependencias",
+        "Hace asíncrona una función",
+        "Cancela peticiones HTTP",
+        "Crea estado derivado"
+      ],
+      "answer": 0,
+      "explanation": "Es útil al pasar funciones a componentes memorizados."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué permite React.memo?",
+      "choices": [
+        "Guardar datos en el navegador",
+        "Evitar re-renderizar un componente si sus props no han cambiado",
+        "Crear contextos",
+        "Cargar componentes de forma diferida"
+      ],
+      "answer": 1,
+      "explanation": "Compara las props con las del render anterior."
+    },
+    {
+      "level": 4,
+      "text": "¿Para qué sirve Context en React?",
+      "choices": [
+        "Para hacer peticiones HTTP",
+        "Para animar componentes",
+        "Para compartir datos con muchos niveles de componentes sin pasarlos por props uno a uno",
+        "Para validar formularios"
+      ],
+      "answer": 2,
+      "explanation": "Evita el prop drilling."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace React.lazy junto con Suspense?",
+      "choices": [
+        "Retrasa el estado",
+        "Carga un componente bajo demanda y muestra un fallback mientras llega",
+        "Optimiza imágenes",
+        "Elimina del bundle los componentes sin uso en tiempo de ejecución"
+      ],
+      "answer": 1,
+      "explanation": "Permite dividir el código en trozos que se descargan cuando hacen falta."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace un Error Boundary?",
+      "choices": [
+        "Captura errores de render en sus hijos y muestra una interfaz alternativa",
+        "Captura errores en manejadores de eventos",
+        "Captura errores de peticiones asíncronas",
+        "Evita todos los errores de JavaScript"
+      ],
+      "answer": 0,
+      "explanation": "No captura errores de eventos ni de código asíncrono."
+    },
+    {
+      "level": 5,
+      "text": "En desarrollo con StrictMode, ¿por qué un useEffect puede ejecutarse dos veces al montar?",
+      "choices": [
+        "Es un fallo conocido de React",
+        "El navegador recarga la página",
+        "Las dependencias cambian solas",
+        "React monta, desmonta y vuelve a montar a propósito para detectar efectos sin limpieza correcta"
+      ],
+      "answer": 3,
+      "explanation": "Ayuda a encontrar efectos que no limpian bien sus suscripciones."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué devuelve un componente de función en React?",
+      "choices": [
+        "Una consulta SQL",
+        "Un objeto Date",
+        "Elementos JSX que describen la interfaz",
+        "Un archivo CSS"
+      ],
+      "answer": 2,
+      "explanation": "React convierte ese resultado en elementos del DOM."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se escribe una expresión de JavaScript dentro de JSX?",
+      "choices": [
+        "Entre comillas",
+        "Entre llaves {}",
+        "Entre paréntesis angulares <>",
+        "Entre corchetes []"
+      ],
+      "answer": 1,
+      "explanation": "Por ejemplo <p>{nombre}</p>."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué atributo aplica una clase CSS en JSX?",
+      "choices": [
+        "className",
+        "style-class",
+        "class",
+        "cssClass"
+      ],
+      "answer": 0,
+      "explanation": "class es una palabra reservada de JavaScript."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo debe empezar el nombre de un componente?",
+      "choices": [
+        "Con un número",
+        "Con guion bajo",
+        "Con minúscula",
+        "Con mayúscula"
+      ],
+      "answer": 3,
+      "explanation": "Así React lo distingue de una etiqueta HTML."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué hace root.render(<App />)?",
+      "choices": [
+        "Compila el JSX",
+        "Pinta la aplicación dentro del elemento del DOM",
+        "Instala dependencias",
+        "Crea un servidor"
+      ],
+      "answer": 1,
+      "explanation": "root se crea con createRoot sobre un elemento del HTML."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se devuelven varios elementos hermanos sin un div extra?",
+      "choices": [
+        "Con un array sin keys",
+        "Solo con componentes de clase",
+        "Es imposible",
+        "Con un Fragment <>...</>"
+      ],
+      "answer": 3,
+      "explanation": "El fragmento no añade nodos al DOM."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué son las props?",
+      "choices": [
+        "Datos que un componente recibe de su padre",
+        "El estado interno del componente",
+        "Funciones del navegador",
+        "Estilos globales"
+      ],
+      "answer": 0,
+      "explanation": "Son de solo lectura."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se renderiza algo de forma condicional dentro de JSX?",
+      "choices": [
+        "Con un if dentro de las llaves",
+        "No es posible",
+        "Con switch en el return",
+        "Con un ternario o con &&"
+      ],
+      "answer": 3,
+      "explanation": "En JSX solo caben expresiones, no sentencias."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace setCount(count + 1) de useState?",
+      "choices": [
+        "Modifica count directamente",
+        "Recarga la página",
+        "Actualiza el estado y provoca un nuevo render",
+        "Guarda el valor en localStorage"
+      ],
+      "answer": 2,
+      "explanation": "React vuelve a ejecutar el componente con el valor nuevo."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se renderiza una lista de elementos?",
+      "choices": [
+        "Con map devolviendo elementos con key",
+        "Con forEach dentro del JSX",
+        "Con un for dentro del JSX",
+        "Con while"
+      ],
+      "answer": 0,
+      "explanation": "map devuelve un array de elementos."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué es un componente controlado en un formulario?",
+      "choices": [
+        "Uno de solo lectura",
+        "Uno sin estado",
+        "Uno cuyo valor lo gobierna el estado de React",
+        "Uno que usa solo el DOM"
+      ],
+      "answer": 2,
+      "explanation": "El input usa value y onChange."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se pasa una función como prop a un hijo?",
+      "choices": [
+        "<Hijo onSave={guardar} />",
+        "<Hijo onSave='guardar' />",
+        "<Hijo onSave=guardar() />",
+        "<Hijo>guardar</Hijo>"
+      ],
+      "answer": 0,
+      "explanation": "Con guardar() se ejecutaría al renderizar."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué es children?",
+      "choices": [
+        "Un hook",
+        "El estado de los hijos",
+        "Una prop con el contenido anidado entre las etiquetas del componente",
+        "La lista de nodos hijos del DOM"
+      ],
+      "answer": 2,
+      "explanation": "Permite crear contenedores reutilizables."
+    },
+    {
+      "level": 2,
+      "text": "¿Por qué no se llaman hooks dentro de un if?",
+      "choices": [
+        "Porque son lentos",
+        "Porque deben ejecutarse en el mismo orden en cada render",
+        "Porque lo prohíben los navegadores antiguos",
+        "Porque if no existe en JSX"
+      ],
+      "answer": 1,
+      "explanation": "React identifica cada hook por su posición."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace useRef?",
+      "choices": [
+        "Provoca un render al cambiar",
+        "Ejecuta efectos",
+        "Guarda el estado global",
+        "Guarda un valor mutable que no provoca render al cambiar"
+      ],
+      "answer": 3,
+      "explanation": "También sirve para acceder a un elemento del DOM."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se evita que un formulario recargue la página al enviarse?",
+      "choices": [
+        "Con return false en el JSX",
+        "Con event.stop()",
+        "No se puede evitar",
+        "Con event.preventDefault() en onSubmit"
+      ],
+      "answer": 3,
+      "explanation": "preventDefault cancela el comportamiento por defecto."
+    },
+    {
+      "level": 3,
+      "text": "¿Cómo limpia un efecto sus recursos?",
+      "choices": [
+        "Con un hook useCleanup",
+        "Con un segundo useEffect vacío",
+        "Devolviendo una función de limpieza desde useEffect",
+        "No hace falta nunca"
+      ],
+      "answer": 2,
+      "explanation": "Se ejecuta antes del siguiente efecto y al desmontar."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es lifting state up?",
+      "choices": [
+        "Usar siempre Redux",
+        "Subir el estado a localStorage",
+        "Copiar el estado en cada hijo",
+        "Mover el estado al ancestro común para compartirlo entre componentes"
+      ],
+      "answer": 3,
+      "explanation": "El padre pasa el valor y las funciones por props."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace useReducer?",
+      "choices": [
+        "Ejecuta efectos en orden",
+        "Gestiona estado complejo con una función reductora y acciones",
+        "Memoriza componentes",
+        "Reduce el tamaño del bundle"
+      ],
+      "answer": 1,
+      "explanation": "Es útil cuando el siguiente estado depende de varias acciones."
+    },
+    {
+      "level": 3,
+      "text": "¿Por qué no conviene usar el índice como key si la lista se reordena?",
+      "choices": [
+        "Porque el índice es lento",
+        "Porque rompe el CSS",
+        "React puede asociar mal el estado a cada elemento",
+        "Porque no se permiten números"
+      ],
+      "answer": 2,
+      "explanation": "Mejor usar un id estable."
+    },
+    {
+      "level": 3,
+      "text": "¿Cuándo se ejecuta un useEffect sin array de dependencias?",
+      "choices": [
+        "Tras cada render",
+        "Solo cuando cambian las props",
+        "Nunca",
+        "Solo una vez"
+      ],
+      "answer": 0,
+      "explanation": "Con [] se ejecuta una vez y con dependencias, cuando cambian."
+    },
+    {
+      "level": 3,
+      "text": "¿Cómo se actualiza un objeto del estado sin mutarlo?",
+      "choices": [
+        "Con setUser.name = x",
+        "Con user.name = x y luego setUser(user)",
+        "Con delete user.name",
+        "Creando uno nuevo con spread, como setUser({ ...user, name })"
+      ],
+      "answer": 3,
+      "explanation": "React detecta el cambio por la referencia nueva."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace <Link to='/a'> de React Router?",
+      "choices": [
+        "Hace una petición POST",
+        "Recarga la página completa",
+        "Abre una pestaña nueva",
+        "Navega sin recargar la página"
+      ],
+      "answer": 3,
+      "explanation": "Es una navegación del lado del cliente."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es un custom hook?",
+      "choices": [
+        "Un componente de clase",
+        "Un hook de React ya instalado",
+        "Una función que empieza por use y reutiliza lógica con hooks",
+        "Una librería externa obligatoria"
+      ],
+      "answer": 2,
+      "explanation": "Permite compartir lógica sin compartir interfaz."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace startTransition?",
+      "choices": [
+        "Marca una actualización como no urgente para no bloquear la interfaz",
+        "Retrasa el render un segundo",
+        "Cancela siempre el render anterior",
+        "Inicia una animación CSS"
+      ],
+      "answer": 0,
+      "explanation": "Mantiene fluida la entrada del usuario."
+    },
+    {
+      "level": 4,
+      "text": "¿Por qué setCount(c => c + 1) es más seguro que setCount(count + 1)?",
+      "choices": [
+        "Es siempre más rápido",
+        "Usa el valor más reciente aunque haya varias actualizaciones seguidas",
+        "Evita renders",
+        "Es obligatorio"
+      ],
+      "answer": 1,
+      "explanation": "Con el valor capturado pueden perderse actualizaciones."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué problema da pasar un objeto literal como prop a un componente memoizado?",
+      "choices": [
+        "Da error de sintaxis",
+        "Se crea uno nuevo en cada render y la memoización no sirve",
+        "Ninguno",
+        "Impide usar props"
+      ],
+      "answer": 1,
+      "explanation": "React.memo compara las props por referencia."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es el prop drilling?",
+      "choices": [
+        "Un error de TypeScript",
+        "Un tipo de hook",
+        "Pasar props por muchos niveles que no las usan",
+        "Perforar el DOM"
+      ],
+      "answer": 2,
+      "explanation": "Context o composición lo evitan."
+    },
+    {
+      "level": 4,
+      "text": "¿Para qué sirve useLayoutEffect?",
+      "choices": [
+        "Sustituir a useState",
+        "Hacer peticiones HTTP",
+        "Ejecutar código tras actualizar el DOM y antes de que el navegador pinte",
+        "Ejecutar código antes de renderizar"
+      ],
+      "answer": 2,
+      "explanation": "Se usa, por ejemplo, para medir elementos."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace createPortal?",
+      "choices": [
+        "Duplica el componente",
+        "Renderiza hijos en otro nodo del DOM fuera de la jerarquía del padre",
+        "Conecta con otra aplicación",
+        "Abre una ventana nueva"
+      ],
+      "answer": 1,
+      "explanation": "Es útil para modales."
+    },
+    {
+      "level": 4,
+      "text": "¿Cuándo conviene useDeferredValue?",
+      "choices": [
+        "Para guardar en caché",
+        "Para retrasar una parte costosa de la interfaz mientras el usuario escribe",
+        "Para cancelar eventos",
+        "Para cargar datos del servidor"
+      ],
+      "answer": 1,
+      "explanation": "La parte diferida se actualiza cuando hay tiempo libre."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué pasa si el value de un Context.Provider es un objeto nuevo en cada render?",
+      "choices": [
+        "El Context deja de funcionar",
+        "Todos los consumidores se vuelven a renderizar",
+        "Nada, React lo compara en profundidad",
+        "Se pierde el estado"
+      ],
+      "answer": 1,
+      "explanation": "Conviene memorizar el valor con useMemo."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es la reconciliación en React?",
+      "choices": [
+        "Compilar JSX a JavaScript",
+        "Conectar con la API",
+        "El proceso que compara el árbol nuevo con el anterior para actualizar solo lo necesario",
+        "Hidratar el HTML"
+      ],
+      "answer": 2,
+      "explanation": "Se apoya en el tipo de elemento y en las keys."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es la hidratación?",
+      "choices": [
+        "Adjuntar eventos y estado de React al HTML renderizado en el servidor",
+        "Descargar datos con fetch",
+        "Optimizar imágenes",
+        "Minificar el bundle"
+      ],
+      "answer": 0,
+      "explanation": "El HTML del servidor debe coincidir con lo que renderiza el cliente."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hacen los Server Components?",
+      "choices": [
+        "Se renderizan en el servidor y no envían su JavaScript al cliente",
+        "Reemplazan a Node",
+        "Se ejecutan en el navegador con más permisos",
+        "Solo sirven para CSS"
+      ],
+      "answer": 0,
+      "explanation": "Pueden leer datos directamente sin exponer código al navegador."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es el batching automático de React 18?",
+      "choices": [
+        "Enviar varias peticiones juntas",
+        "Ejecutar efectos en lote",
+        "Agrupar varias actualizaciones de estado en un solo render, también en promesas y timeouts",
+        "Agrupar componentes en un archivo"
+      ],
+      "answer": 2,
+      "explanation": "Antes solo ocurría dentro de eventos de React."
+    },
+    {
+      "level": 5,
+      "text": "¿Para qué sirve Suspense?",
+      "choices": [
+        "Cancelar peticiones",
+        "Mostrar un fallback mientras un componente espera datos o código",
+        "Pausar el servidor",
+        "Cachear en el navegador"
+      ],
+      "answer": 1,
+      "explanation": "Funciona con React.lazy y con librerías compatibles de datos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hook evita el tearing con stores externos en renders concurrentes?",
+      "choices": [
+        "useEffect con setState",
+        "useImperativeHandle",
+        "useSyncExternalStore",
+        "useMemo"
+      ],
+      "answer": 2,
+      "explanation": "Garantiza una lectura coherente del store en un mismo render."
+    },
+    {
+      "level": 5,
+      "text": "¿Para qué sirve useImperativeHandle junto a forwardRef?",
+      "choices": [
+        "Sustituir las props",
+        "Crear estado imperativo",
+        "Ejecutar efectos en el servidor",
+        "Controlar qué métodos expone un componente a la ref de su padre"
+      ],
+      "answer": 3,
+      "explanation": "Evita exponer todo el nodo del DOM."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué diferencia hay entre un efecto y un manejador de eventos?",
+      "choices": [
+        "Los efectos solo existen en clases",
+        "Son lo mismo",
+        "El efecto sincroniza con algo externo tras renderizar y el evento responde a una acción del usuario",
+        "Los eventos se ejecutan al renderizar"
+      ],
+      "answer": 2,
+      "explanation": "Lo que depende de una acción puntual va en el manejador, no en un efecto."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo recibe datos un componente hijo desde su padre?",
+      "choices": [
+        "Mediante cookies",
+        "Mediante variables globales del navegador",
+        "Mediante props",
+        "Mediante useEffect"
+      ],
+      "answer": 2,
+      "explanation": "Las props son de solo lectura."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué atributo asigna una clase CSS en JSX?",
+      "choices": [
+        "class",
+        "className",
+        "cssClass",
+        "style-class"
+      ],
+      "answer": 1,
+      "explanation": "class es palabra reservada en JavaScript."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué función crea la raíz de la app en React 18?",
+      "choices": [
+        "ReactDOM.render",
+        "mountApp",
+        "startRoot",
+        "createRoot"
+      ],
+      "answer": 3,
+      "explanation": "Habilita las funciones concurrentes."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué puede devolver un componente funcional?",
+      "choices": [
+        "Elementos JSX o null",
+        "Solo cadenas de texto",
+        "Solo números",
+        "Siempre un array de objetos"
+      ],
+      "answer": 0,
+      "explanation": "null no renderiza nada."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué es un componente controlado?",
+      "choices": [
+        "Un componente sin props",
+        "Un campo cuyo valor lo gobierna el estado de React",
+        "Un componente que no se actualiza",
+        "Un componente de clase"
+      ],
+      "answer": 1,
+      "explanation": "El valor y el onChange están en React."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se renderiza algo de forma condicional?",
+      "choices": [
+        "Con un ternario o el operador && dentro del JSX",
+        "Con la directiva v-if",
+        "Con un bucle for dentro del JSX",
+        "Con un archivo aparte"
+      ],
+      "answer": 0,
+      "explanation": "Son expresiones de JavaScript."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace el segundo argumento de useEffect?",
+      "choices": [
+        "Define el nombre del efecto",
+        "Limita las veces totales",
+        "Es el tiempo de espera",
+        "Indica las dependencias que deciden cuándo se ejecuta"
+      ],
+      "answer": 3,
+      "explanation": "Con [] se ejecuta solo tras el primer render."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo se actualiza el estado en un componente funcional?",
+      "choices": [
+        "Modificando la variable directamente",
+        "Con la función que devuelve useState",
+        "Con this.setState",
+        "Con document.getElementById"
+      ],
+      "answer": 1,
+      "explanation": "Cambiar la variable a mano no provoca render."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace useCallback?",
+      "choices": [
+        "Memoriza una función entre renderizados",
+        "Llama a una API",
+        "Cancela un efecto",
+        "Cambia el estado del padre"
+      ],
+      "answer": 0,
+      "explanation": "Útil con React.memo y dependencias de efectos."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve useRef?",
+      "choices": [
+        "Crear estado reactivo",
+        "Guardar un valor mutable que no provoca re-render o acceder a un nodo del DOM",
+        "Registrar eventos globales",
+        "Compartir datos entre pestañas"
+      ],
+      "answer": 1,
+      "explanation": "Cambiar ref.current no vuelve a renderizar."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es elevar el estado (lifting state up)?",
+      "choices": [
+        "Guardar el estado en localStorage",
+        "Convertir el estado en prop constante",
+        "Eliminar el estado",
+        "Mover el estado al ancestro común para compartirlo"
+      ],
+      "answer": 3,
+      "explanation": "Los hijos lo reciben por props."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace React.memo?",
+      "choices": [
+        "Evita re-renderizar un componente si sus props no cambian",
+        "Guarda el componente en disco",
+        "Lo convierte en clase",
+        "Lo renderiza en el servidor"
+      ],
+      "answer": 0,
+      "explanation": "Compara las props de forma superficial."
+    },
+    {
+      "level": 4,
+      "text": "¿Para qué sirve useReducer?",
+      "choices": [
+        "Hacer peticiones HTTP",
+        "Memorizar funciones",
+        "Gestionar estado complejo con acciones y una función reductora",
+        "Acceder al DOM"
+      ],
+      "answer": 2,
+      "explanation": "Útil cuando el estado tiene varias transiciones."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué problema resuelve el Context API?",
+      "choices": [
+        "Acelera las peticiones",
+        "Evita pasar props por muchos niveles",
+        "Sustituye al DOM virtual",
+        "Elimina la necesidad de estado"
+      ],
+      "answer": 1,
+      "explanation": "Es el llamado prop drilling."
+    },
+    {
+      "level": 4,
+      "text": "¿Cuándo se ejecuta la función de limpieza de useEffect?",
+      "choices": [
+        "Antes del siguiente efecto y al desmontar el componente",
+        "Solo al montar",
+        "Solo cuando falla el efecto",
+        "Nunca"
+      ],
+      "answer": 0,
+      "explanation": "Sirve para cancelar suscripciones o temporizadores."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace useTransition?",
+      "choices": [
+        "Marca actualizaciones como no urgentes para mantener la interfaz receptiva",
+        "Anima transiciones CSS",
+        "Cambia de ruta",
+        "Cancela renders"
+      ],
+      "answer": 0,
+      "explanation": "Las actualizaciones urgentes tienen prioridad."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es la hidratación (hydration)?",
+      "choices": [
+        "Cargar datos desde una API",
+        "React asocia eventos y estado al HTML renderizado en el servidor",
+        "Comprimir el bundle",
+        "Limpiar el estado"
+      ],
+      "answer": 1,
+      "explanation": "Debe coincidir con el HTML recibido."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué problema causa pasar un objeto literal como value de un Provider?",
+      "choices": [
+        "El contexto deja de funcionar",
+        "Lanza un error de tipos",
+        "Los consumidores nunca se actualizan",
+        "Cada render crea un objeto nuevo y re-renderiza a todos los consumidores"
+      ],
+      "answer": 3,
+      "explanation": "Se soluciona con useMemo."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace useDeferredValue?",
+      "choices": [
+        "Devuelve una versión retrasada de un valor para diferir trabajo costoso",
+        "Cancela una petición",
+        "Guarda un valor en caché",
+        "Evita que cambie un valor"
+      ],
+      "answer": 0,
+      "explanation": "Mantiene la entrada fluida mientras se renderiza lo pesado."
+    },
+    {
+      "level": 2,
+      "text": "¿Cuándo se dispara onChange en un campo de texto?",
+      "choices": [
+        "Cuando cambia su valor",
+        "Solo al enviar el formulario",
+        "Solo al perder el foco",
+        "Solo al cargar la página"
+      ],
+      "answer": 0,
+      "explanation": "En React se dispara en cada cambio."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué ocurre si se modifica el estado directamente sin usar su setter?",
+      "choices": [
+        "Se renderiza dos veces",
+        "Lanza un error al compilar",
+        "React no detecta el cambio y no vuelve a renderizar",
+        "Se guarda en localStorage"
+      ],
+      "answer": 2,
+      "explanation": "Siempre hay que usar la función de actualización."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve un Fragment?",
+      "choices": [
+        "Agrupar hijos sin añadir nodos extra al DOM",
+        "Dividir la app en rutas",
+        "Cargar componentes de forma diferida",
+        "Memorizar componentes"
+      ],
+      "answer": 0,
+      "explanation": "Se escribe como <></>."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es un Error Boundary?",
+      "choices": [
+        "Un hook para validar formularios",
+        "Una librería de pruebas",
+        "Un componente que reintenta peticiones",
+        "Un componente que captura errores de renderizado de sus hijos y muestra una alternativa"
+      ],
+      "answer": 3,
+      "explanation": "Se implementa con una clase."
+    },
+    {
+      "level": 5,
+      "text": "¿Para qué sirve React.StrictMode en desarrollo?",
+      "choices": [
+        "Acelera el render en producción",
+        "Detecta efectos secundarios inseguros ejecutando dos veces ciertas funciones",
+        "Bloquea el uso de hooks",
+        "Minimiza el código"
+      ],
+      "answer": 1,
+      "explanation": "No afecta a la versión de producción."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué se recomienda usar como key al renderizar elementos de una lista?",
+      "choices": [
+        "El índice del array siempre",
+        "Un identificador estable y único de cada elemento",
+        "Un número aleatorio en cada render",
+        "El texto del elemento aunque se repita"
+      ],
+      "answer": 1,
+      "explanation": "Un id estable evita errores al reordenar o borrar elementos."
+    }
+  ]
+}

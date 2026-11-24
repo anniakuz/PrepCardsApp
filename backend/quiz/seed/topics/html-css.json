@@ -1,0 +1,484 @@
+{
+ "questions": [
+  {
+   "level": 1,
+   "text": "¿Qué etiqueta HTML define el título principal de una página?",
+   "choices": [
+    "<h1>",
+    "<head>",
+    "<header>",
+    "<title>"
+   ],
+   "answer": 0,
+   "explanation": "<title> es el texto de la pestaña y <h1> el encabezado principal visible."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué etiqueta se usa para crear un enlace?",
+   "choices": [
+    "<link>",
+    "<url>",
+    "<a>",
+    "<href>"
+   ],
+   "answer": 2,
+   "explanation": "El destino va en el atributo href."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué etiqueta inserta una imagen?",
+   "choices": [
+    "<img>",
+    "<image>",
+    "<src>",
+    "<pic>"
+   ],
+   "answer": 0,
+   "explanation": "Se escribe <img src=\"...\" alt=\"...\">."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué propiedad CSS cambia el color del texto?",
+   "choices": [
+    "foreground",
+    "color",
+    "text-color",
+    "font-color"
+   ],
+   "answer": 1,
+   "explanation": "Por ejemplo color: red;"
+  },
+  {
+   "level": 1,
+   "text": "¿Qué propiedad CSS cambia el color de fondo?",
+   "choices": [
+    "fill",
+    "bgcolor",
+    "background-color",
+    "color-background"
+   ],
+   "answer": 2,
+   "explanation": "También se puede usar el atajo background."
+  },
+  {
+   "level": 1,
+   "text": "¿Cómo se selecciona un elemento por su clase en CSS?",
+   "choices": [
+    "clase",
+    "#clase",
+    "*clase",
+    ".clase"
+   ],
+   "answer": 3,
+   "explanation": "El punto indica una clase."
+  },
+  {
+   "level": 1,
+   "text": "¿Cómo se selecciona un elemento por su id en CSS?",
+   "choices": [
+    "#id",
+    "@id",
+    "id",
+    ".id"
+   ],
+   "answer": 0,
+   "explanation": "La almohadilla indica un id."
+  },
+  {
+   "level": 1,
+   "text": "¿Qué etiqueta crea una lista no ordenada?",
+   "choices": [
+    "<li>",
+    "<ul>",
+    "<ol>",
+    "<list>"
+   ],
+   "answer": 1,
+   "explanation": "Cada elemento va dentro de un <li>."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué es el modelo de caja de CSS?",
+   "choices": [
+    "Cada elemento se compone de contenido, padding, borde y margen",
+    "Una forma de crear cajas con JavaScript",
+    "El orden en que se cargan los estilos",
+    "Un tipo de selector"
+   ],
+   "answer": 0,
+   "explanation": "Determina el tamaño total que ocupa un elemento."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué diferencia hay entre padding y margin?",
+   "choices": [
+    "padding es exterior y margin interior",
+    "Son iguales",
+    "padding solo afecta al texto",
+    "padding es el espacio interior y margin el espacio exterior al borde"
+   ],
+   "answer": 3,
+   "explanation": "El padding queda dentro del borde y el margin fuera."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace display: none?",
+   "choices": [
+    "Oculta el elemento y no ocupa espacio",
+    "Lo oculta pero conserva su espacio",
+    "Lo hace transparente",
+    "Lo elimina del DOM"
+   ],
+   "answer": 0,
+   "explanation": "El elemento sigue en el DOM, pero no se pinta."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué atributo describe una imagen para lectores de pantalla?",
+   "choices": [
+    "title",
+    "caption",
+    "name",
+    "alt"
+   ],
+   "answer": 3,
+   "explanation": "También se muestra si la imagen no carga."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué diferencia hay entre un elemento en bloque y uno en línea?",
+   "choices": [
+    "El bloque nunca admite ancho",
+    "No hay diferencia",
+    "El de línea ocupa todo el ancho",
+    "El bloque ocupa todo el ancho y empieza en línea nueva, el de línea fluye con el texto"
+   ],
+   "answer": 3,
+   "explanation": "div es de bloque y span es de línea."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué etiqueta HTML5 representa la navegación principal?",
+   "choices": [
+    "<nav>",
+    "<links>",
+    "<navigate>",
+    "<menu>"
+   ],
+   "answer": 0,
+   "explanation": "Es una etiqueta semántica que ayuda a la accesibilidad."
+  },
+  {
+   "level": 2,
+   "text": "¿Qué propiedad CSS cambia el tamaño de la fuente?",
+   "choices": [
+    "font-size",
+    "size",
+    "text-size",
+    "font-style"
+   ],
+   "answer": 0,
+   "explanation": "Por ejemplo font-size: 16px;"
+  },
+  {
+   "level": 2,
+   "text": "¿Qué hace position: relative sin más propiedades?",
+   "choices": [
+    "Deja el elemento en su sitio y crea referencia para hijos con position absolute",
+    "Lo oculta",
+    "Lo saca del flujo de la página",
+    "Lo fija a la pantalla"
+   ],
+   "answer": 0,
+   "explanation": "Los desplazamientos top y left se aplican respecto a su posición normal."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es Flexbox?",
+   "choices": [
+    "Un modelo solo para layouts en dos dimensiones",
+    "Una librería de JavaScript",
+    "Un tipo de animación",
+    "Un modelo de layout para distribuir elementos en una dimensión"
+   ],
+   "answer": 3,
+   "explanation": "Para dos dimensiones se usa Grid."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace justify-content: center en un contenedor flex?",
+   "choices": [
+    "Centra el texto",
+    "Centra los elementos en el eje principal",
+    "Centra el contenedor en la página",
+    "Centra en el eje transversal"
+   ],
+   "answer": 1,
+   "explanation": "align-items trabaja en el eje transversal."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es CSS Grid?",
+   "choices": [
+    "Una librería de iconos",
+    "Un sistema de layout en filas y columnas",
+    "Un selector",
+    "Un tipo de tabla HTML"
+   ],
+   "answer": 1,
+   "explanation": "Permite colocar elementos en dos dimensiones."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace una media query?",
+   "choices": [
+    "Cambia el HTML",
+    "Carga imágenes más rápido",
+    "Reproduce medios",
+    "Aplica estilos según condiciones como el ancho de la pantalla"
+   ],
+   "answer": 3,
+   "explanation": "Es la base del diseño adaptable."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué significa el enfoque mobile first?",
+   "choices": [
+    "Cargar JavaScript antes",
+    "Escribir primero los estilos para móvil y ampliarlos con min-width",
+    "Usar solo imágenes pequeñas",
+    "Diseñar solo para móviles"
+   ],
+   "answer": 1,
+   "explanation": "Se parte de lo básico y se añade para pantallas mayores."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué hace box-sizing: border-box?",
+   "choices": [
+    "Añade un borde alrededor",
+    "Hace que width incluya el padding y el borde",
+    "Quita el borde",
+    "Hace que el margen cuente en width"
+   ],
+   "answer": 1,
+   "explanation": "Facilita calcular los tamaños."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué diferencia hay entre rem y em?",
+   "choices": [
+    "rem se basa en la fuente del elemento raíz y em en la del propio elemento o su padre",
+    "em es una unidad absoluta",
+    "rem depende del padre y em de la raíz",
+    "Son iguales"
+   ],
+   "answer": 0,
+   "explanation": "rem es más predecible al no acumularse."
+  },
+  {
+   "level": 3,
+   "text": "¿Qué es la especificidad en CSS?",
+   "choices": [
+    "El orden de las propiedades",
+    "El tamaño de los selectores",
+    "La velocidad de carga del CSS",
+    "La regla que decide qué estilo gana cuando varios coinciden"
+   ],
+   "answer": 3,
+   "explanation": "Un id pesa más que una clase y una clase más que una etiqueta."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué selector tiene mayor especificidad?",
+   "choices": [
+    "#menu",
+    ".menu",
+    "nav",
+    "li:first-child"
+   ],
+   "answer": 0,
+   "explanation": "Un id supera a clases, pseudo-clases y etiquetas."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace !important?",
+   "choices": [
+    "Hace que la regla se cargue primero",
+    "Desactiva la cascada de toda la hoja",
+    "Evita que se herede",
+    "Da prioridad a una declaración sobre el resto, salvo otro !important más específico"
+   ],
+   "answer": 3,
+   "explanation": "Conviene evitarlo porque dificulta mantener el CSS."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué diferencia hay entre visibility: hidden y display: none?",
+   "choices": [
+    "none conserva el espacio",
+    "hidden oculta pero conserva el espacio, none no ocupa espacio",
+    "hidden elimina el elemento del DOM",
+    "Son idénticos"
+   ],
+   "answer": 1,
+   "explanation": "Con hidden, el hueco sigue ahí."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué es un contexto de apilamiento?",
+   "choices": [
+    "Una pila de JavaScript",
+    "Un grupo de elementos que se ordenan con z-index entre sí de forma aislada",
+    "Una lista de estilos",
+    "El orden de carga de scripts"
+   ],
+   "answer": 1,
+   "explanation": "Un z-index alto no sirve fuera de su contexto."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace grid-template-columns: repeat(3, 1fr)?",
+   "choices": [
+    "Crea una columna de 3 píxeles",
+    "Repite el elemento 3 veces",
+    "Crea 3 columnas iguales que se reparten el espacio",
+    "Crea 3 filas"
+   ],
+   "answer": 2,
+   "explanation": "fr es una fracción del espacio disponible."
+  },
+  {
+   "level": 4,
+   "text": "¿Para qué sirve :focus-visible?",
+   "choices": [
+    "Resaltar enlaces visitados",
+    "Dar foco automático",
+    "Ocultar el foco siempre",
+    "Mostrar el foco solo cuando se navega con teclado"
+   ],
+   "answer": 3,
+   "explanation": "Mejora la estética sin perder accesibilidad."
+  },
+  {
+   "level": 4,
+   "text": "¿Cómo se asocia una label con su input?",
+   "choices": [
+    "Con name",
+    "Con href",
+    "Con target",
+    "Con el atributo for de la label igual al id del input"
+   ],
+   "answer": 3,
+   "explanation": "Así, al pulsar la etiqueta se enfoca el campo."
+  },
+  {
+   "level": 4,
+   "text": "¿Qué hace la propiedad transition?",
+   "choices": [
+    "Cambia de página",
+    "Saca el elemento del flujo",
+    "Anima suavemente el cambio de una propiedad CSS",
+    "Carga una fuente"
+   ],
+   "answer": 2,
+   "explanation": "Por ejemplo transition: background 0.3s;"
+  },
+  {
+   "level": 5,
+   "text": "¿Qué ventaja tienen las variables CSS frente a las de un preprocesador?",
+   "choices": [
+    "Solo valen para colores",
+    "No se pueden sobrescribir",
+    "Se calculan solo al compilar",
+    "Pueden cambiar en tiempo de ejecución y se heredan en el DOM"
+   ],
+   "answer": 3,
+   "explanation": "Se definen como --nombre y se usan con var()."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es el critical rendering path?",
+   "choices": [
+    "Una herramienta de compresión",
+    "Los pasos del navegador desde el HTML y el CSS hasta pintar los píxeles",
+    "El orden de los scripts",
+    "La ruta de las URL críticas"
+   ],
+   "answer": 1,
+   "explanation": "Reducir recursos que bloquean el pintado acelera la primera carga."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué efecto tiene un script sin defer ni async en el head?",
+   "choices": [
+    "Se ejecuta en un hilo aparte",
+    "Se ejecuta siempre tras todo el HTML",
+    "Bloquea el análisis del HTML mientras se descarga y se ejecuta",
+    "No bloquea nada"
+   ],
+   "answer": 2,
+   "explanation": "defer descarga en paralelo y ejecuta al terminar el análisis."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué atributo retrasa la carga de imágenes que están fuera de la pantalla?",
+   "choices": [
+    "decoding=\"sync\"",
+    "fetchpriority=\"none\"",
+    "loading=\"lazy\"",
+    "preload=\"all\""
+   ],
+   "answer": 2,
+   "explanation": "El navegador las carga cuando el usuario se acerca."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué hace el atributo srcset en una imagen?",
+   "choices": [
+    "Recorta la imagen",
+    "Cambia la imagen al pasar el ratón",
+    "Define textos alternativos",
+    "Ofrece varias versiones para que el navegador elija según la pantalla"
+   ],
+   "answer": 3,
+   "explanation": "Se combina con sizes."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué es ARIA?",
+   "choices": [
+    "Un framework CSS",
+    "Atributos que añaden información de accesibilidad cuando el HTML nativo no basta",
+    "Un formato de imagen",
+    "Un protocolo de red"
+   ],
+   "answer": 1,
+   "explanation": "La primera regla es usar HTML semántico antes que ARIA."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué diferencia hay entre reflow y repaint?",
+   "choices": [
+    "reflow solo afecta a imágenes",
+    "Son lo mismo",
+    "repaint recalcula la geometría",
+    "reflow recalcula la geometría y repaint solo vuelve a pintar"
+   ],
+   "answer": 3,
+   "explanation": "El reflow es más costoso."
+  },
+  {
+   "level": 5,
+   "text": "¿Qué propiedades CSS conviene animar para obtener mejor rendimiento?",
+   "choices": [
+    "margin y padding",
+    "transform y opacity",
+    "top y left",
+    "width y height"
+   ],
+   "answer": 1,
+   "explanation": "No provocan reflow y el navegador las acelera con la GPU."
+  }
+ ]
+}

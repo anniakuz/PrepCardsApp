@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-slate-50 via-indigo-50/40 to-violet-50/50 bg-fixed text-slate-800 antialiased;
+}
+
+@layer components {
+  .card {
+    @apply animate-fade-up rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-sm transition duration-200;
+  }
+  .card-hover {
+    @apply hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-100;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition duration-150 hover:-translate-y-px hover:shadow-md hover:shadow-indigo-200 active:translate-y-0 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition duration-150 hover:-translate-y-px hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 active:translate-y-0 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .input {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm transition focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200;
+  }
+  .badge {
+    @apply inline-block rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600;
+  }
+  .page-title {
+    @apply bg-gradient-to-r from-indigo-700 to-violet-600 bg-clip-text text-2xl font-extrabold tracking-tight text-transparent sm:text-3xl;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Modo noche */
+.dark body {
+  background-image: none;
+  background-color: #0b1020;
+  color: #e2e8f0;
+}
+.dark .card { background-color: #151b2e; border-color: #263049; }
+.dark .card-hover:hover { border-color: #6366f1; box-shadow: 0 10px 25px -10px rgb(99 102 241 / 0.4); }
+.dark .btn-secondary { background-color: #151b2e; border-color: #374462; color: #cbd5e1; }
+.dark .btn-secondary:hover { background-color: #1e2742; color: #c7d2fe; border-color: #6366f1; }
+.dark .input { background-color: #0f1527; border-color: #374462; color: #e2e8f0; }
+.dark .input::placeholder { color: #64748b; }
+.dark .badge { background-color: #232c45; color: #cbd5e1; }
+.dark .page-title { background-image: linear-gradient(to right, #a5b4fc, #c4b5fd); }
+.dark .bg-white { background-color: #151b2e; }
+.dark .bg-white\/80 { background-color: rgb(11 16 32 / 0.85); }
+.dark .bg-slate-50 { background-color: #1a2138; }
+.dark .bg-slate-100 { background-color: #1e2742; }
+.dark .bg-slate-200\/80 { background-color: #263049; }
+.dark .bg-indigo-50, .dark .bg-indigo-50\/40 { background-color: #1b2142; }
+.dark .bg-indigo-100 { background-color: #2a2f63; }
+.dark .bg-amber-50 { background-color: #3a2e12; }
+.dark .bg-red-50 { background-color: #3b1820; }
+.dark .bg-emerald-50 { background-color: #123127; }
+.dark .bg-green-50 { background-color: #123127; }
+.dark .text-slate-800, .dark .text-slate-900 { color: #f1f5f9; }
+.dark .text-slate-700, .dark .text-slate-600 { color: #cbd5e1; }
+.dark .text-slate-500 { color: #94a3b8; }
+.dark .text-slate-400 { color: #7c8aa5; }
+.dark .text-indigo-700, .dark .text-indigo-600 { color: #a5b4fc; }
+.dark .text-green-700, .dark .text-emerald-700 { color: #6ee7b7; }
+.dark .text-red-600, .dark .text-red-700 { color: #fca5a5; }
+.dark .text-amber-800, .dark .text-amber-700 { color: #fcd34d; }
+.dark .border-slate-200, .dark .border-slate-200\/70, .dark .border-slate-200\/80 { border-color: #263049; }
+.dark .border-slate-300 { border-color: #374462; }
+.dark .hover\:bg-slate-100:hover { background-color: #1e2742; }
+.dark .hover\:bg-indigo-100:hover { background-color: #2a2f63; }
+.dark .hover\:text-slate-900:hover { color: #f1f5f9; }
+.dark .\!bg-green-100 { background-color: #123127 !important; }
+.dark .\!text-green-700 { color: #6ee7b7 !important; }
+.dark .\!bg-red-100 { background-color: #3b1820 !important; }
+.dark .\!text-red-700 { color: #fca5a5 !important; }
+.dark .\!bg-amber-100 { background-color: #3a2e12 !important; }
+.dark .\!text-amber-800 { color: #fcd34d !important; }
+
+/* Modo noche. Fondos suaves y etiquetas de color con texto legible */
+.dark .bg-slate-50\/80 { background-color: #1a2138; }
+.dark .bg-white\/70 { background-color: rgb(21 27 46 / 0.8); }
+.dark .bg-slate-200 { background-color: #263049; }
+.dark .bg-slate-300 { background-color: #3b4766; }
+.dark .bg-green-100, .dark .bg-emerald-100 { background-color: #12372c; }
+.dark .bg-lime-100 { background-color: #2a3612; }
+.dark .bg-amber-100 { background-color: #4a3a10; }
+.dark .bg-orange-100 { background-color: #4a2a12; }
+.dark .bg-rose-100, .dark .bg-red-100 { background-color: #4a1a26; }
+.dark .text-lime-700 { color: #bef264; }
+.dark .text-orange-700 { color: #fdba74; }
+.dark .text-rose-700 { color: #fda4af; }
+.dark .text-green-600 { color: #4ade80; }
+.dark .text-red-500 { color: #fca5a5; }
+.dark .hover\:bg-indigo-50:hover { background-color: #1e2742; }
+.dark .hover\:text-indigo-600:hover, .dark .hover\:text-indigo-700:hover { color: #c7d2fe; }
+.dark .hover\:text-slate-800:hover { color: #f1f5f9; }
+.dark .badge { background-color: #232c45; color: #cbd5e1; }
+.dark .text-amber-700 { color: #fcd34d; }

@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "level": 1,
+      "text": "¿Qué palabra clave se usa para crear una instancia de una clase en Java?",
+      "choices": [
+        "create",
+        "new",
+        "make",
+        "instance"
+      ],
+      "answer": 1,
+      "explanation": "new reserva memoria e invoca al constructor de la clase."
+    },
+    {
+      "level": 1,
+      "text": "¿Cuál es el punto de entrada de un programa Java?",
+      "choices": [
+        "public static void main(String[] args)",
+        "public void start()",
+        "static int run()",
+        "void init(String[] args)"
+      ],
+      "answer": 0,
+      "explanation": "La JVM busca el método main con esa firma para arrancar el programa."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo se usa para guardar texto en Java?",
+      "choices": [
+        "char",
+        "string",
+        "String",
+        "Text"
+      ],
+      "answer": 2,
+      "explanation": "String es una clase de java.lang y se escribe con S mayúscula."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué diferencia hay entre == y equals() al comparar Strings?",
+      "choices": [
+        "No hay diferencia",
+        "== compara referencias y equals() compara el contenido",
+        "== compara el contenido y equals() las referencias",
+        "equals() solo funciona con números"
+      ],
+      "answer": 1,
+      "explanation": "== comprueba si son el mismo objeto y equals() si tienen el mismo texto."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué palabra clave impide que una clase sea heredada?",
+      "choices": [
+        "static",
+        "private",
+        "abstract",
+        "final"
+      ],
+      "answer": 3,
+      "explanation": "Una clase final no puede tener subclases."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué colección no permite elementos duplicados?",
+      "choices": [
+        "ArrayList",
+        "LinkedList",
+        "HashSet",
+        "ArrayDeque"
+      ],
+      "answer": 2,
+      "explanation": "Un Set descarta los elementos repetidos."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace la anotación @Override?",
+      "choices": [
+        "Hace que el método sea estático",
+        "Indica al compilador que el método sobrescribe uno de la superclase",
+        "Impide que el método se sobrescriba",
+        "Sobrecarga el método"
+      ],
+      "answer": 1,
+      "explanation": "Si la firma no coincide con ningún método heredado, el compilador da error."
+    },
+    {
+      "level": 3,
+      "text": "¿Cuándo se ejecuta el bloque finally?",
+      "choices": [
+        "Solo si hay excepción",
+        "Nunca después de un return",
+        "Tanto si hay excepción como si no",
+        "Sustituye al bloque catch"
+      ],
+      "answer": 2,
+      "explanation": "finally se ejecuta siempre, salvo que la JVM termine, por ejemplo con System.exit."
+    },
+    {
+      "level": 3,
+      "text": "¿Cuál es la complejidad media de buscar una clave en un HashMap?",
+      "choices": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "answer": 3,
+      "explanation": "Con una buena función hash el acceso es de tiempo constante."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué garantiza la palabra clave volatile en un campo?",
+      "choices": [
+        "Que cualquier operación sobre él es atómica",
+        "Que las escrituras de un hilo son visibles para los demás hilos",
+        "Que el campo es inmutable",
+        "Que solo un hilo puede acceder a él"
+      ],
+      "answer": 1,
+      "explanation": "volatile da visibilidad y orden, pero no hace atómicas operaciones compuestas como i++."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué interfaz funcional recibe un argumento y devuelve un booleano?",
+      "choices": [
+        "Function<T,R>",
+        "Supplier<T>",
+        "Predicate<T>",
+        "Consumer<T>"
+      ],
+      "answer": 2,
+      "explanation": "Predicate<T> tiene el método test(T) que devuelve boolean."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué pasa si llamas a stream.map(...) sin ninguna operación terminal?",
+      "choices": [
+        "Se ejecuta de inmediato",
+        "Lanza una excepción",
+        "No se procesa ningún elemento",
+        "Se procesa en paralelo"
+      ],
+      "answer": 2,
+      "explanation": "Los streams son perezosos y no hacen nada hasta que hay una operación terminal."
+    },
+    {
+      "level": 5,
+      "text": "En el modelo de memoria de Java, ¿qué garantiza liberar un monitor (unlock) y adquirirlo después en otro hilo?",
+      "choices": [
+        "Nada, no hay garantías",
+        "Que lo escrito antes del unlock es visible tras el lock",
+        "Que ambos hilos corren en el mismo núcleo",
+        "Que se evita el reordenamiento solo en campos volatile"
+      ],
+      "answer": 1,
+      "explanation": "Es una relación happens-before: las escrituras previas al unlock son visibles al hilo que hace el lock."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué diferencia hay entre ConcurrentHashMap y HashMap respecto a null?",
+      "choices": [
+        "Ambos permiten claves null",
+        "ConcurrentHashMap no permite claves ni valores null",
+        "HashMap no permite claves null",
+        "Solo ConcurrentHashMap permite valores null"
+      ],
+      "answer": 1,
+      "explanation": "En un mapa concurrente null sería ambiguo, por eso no se admite."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué recolector de basura de la JVM busca pausas muy cortas con heaps grandes mediante marcado y compactación concurrentes?",
+      "choices": [
+        "Serial GC",
+        "Parallel GC",
+        "ZGC",
+        "Epsilon GC"
+      ],
+      "answer": 2,
+      "explanation": "ZGC está diseñado para pausas de pocos milisegundos con heaps enormes."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo de dato primitivo se usa para valores verdadero o falso?",
+      "choices": [
+        "int",
+        "boolean",
+        "bit",
+        "String"
+      ],
+      "answer": 1,
+      "explanation": "boolean solo admite true o false."
+    },
+    {
+      "level": 1,
+      "text": "¿Cómo se declara un array de 5 enteros en Java?",
+      "choices": [
+        "int[] numeros = new int[5];",
+        "int numeros = new array(5);",
+        "int numeros[5];",
+        "array<int> numeros = [5];"
+      ],
+      "answer": 0,
+      "explanation": "Se crea con new y el tamaño entre corchetes."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué operador compara si dos valores primitivos son iguales?",
+      "choices": [
+        "equals",
+        "==",
+        "===",
+        "="
+      ],
+      "answer": 1,
+      "explanation": "= asigna, == compara y === no existe en Java."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué hace System.out.println?",
+      "choices": [
+        "Cierra el programa",
+        "Lee un dato del teclado",
+        "Imprime un texto y salta de línea",
+        "Crea una variable"
+      ],
+      "answer": 2,
+      "explanation": "println escribe en la salida estándar y añade un salto de línea."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué extensión tiene un archivo de código fuente Java?",
+      "choices": [
+        ".js",
+        ".class",
+        ".jar",
+        ".java"
+      ],
+      "answer": 3,
+      "explanation": ".class es el bytecode compilado y .jar un paquete."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué palabra clave repite un bloque mientras se cumple una condición?",
+      "choices": [
+        "while",
+        "switch",
+        "if",
+        "return"
+      ],
+      "answer": 0,
+      "explanation": "while evalúa la condición antes de cada vuelta."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué significa que Java sea orientado a objetos?",
+      "choices": [
+        "Que organiza el código en clases y objetos",
+        "Que no tiene variables",
+        "Que solo sirve para bases de datos",
+        "Que solo funciona en la web"
+      ],
+      "answer": 0,
+      "explanation": "Los programas se construyen combinando objetos que son instancias de clases."
+    },
+    {
+      "level": 1,
+      "text": "¿Cuál es el valor por defecto de un campo int sin inicializar dentro de una clase?",
+      "choices": [
+        "0",
+        "null",
+        "Da error de compilación",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "Los campos numéricos empiezan en 0, los booleanos en false y las referencias en null."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué diferencia hay entre una clase y un objeto?",
+      "choices": [
+        "La clase solo existe en tiempo de ejecución",
+        "El objeto es la plantilla y la clase es la instancia",
+        "La clase es la plantilla y el objeto es una instancia de ella",
+        "Son lo mismo"
+      ],
+      "answer": 2,
+      "explanation": "Con new se crea un objeto a partir de una clase."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué es un constructor?",
+      "choices": [
+        "Un método especial que se ejecuta al crear un objeto con new",
+        "Una variable con el nombre de la clase",
+        "Un método estático obligatorio en toda clase",
+        "Un método que destruye el objeto"
+      ],
+      "answer": 0,
+      "explanation": "Tiene el nombre de la clase y no declara tipo de retorno."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace this dentro de un método de instancia?",
+      "choices": [
+        "Termina el método",
+        "Crea un objeto nuevo",
+        "Referencia al objeto actual",
+        "Referencia a la clase padre"
+      ],
+      "answer": 2,
+      "explanation": "Sirve, por ejemplo, para distinguir un campo de un parámetro con el mismo nombre."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué modificador permite ver un miembro solo dentro de su propia clase?",
+      "choices": [
+        "private",
+        "protected",
+        "public",
+        "static"
+      ],
+      "answer": 0,
+      "explanation": "private es el nivel de acceso más restrictivo."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué es la sobrecarga de métodos?",
+      "choices": [
+        "Un método que se llama a sí mismo",
+        "Redefinir un método en una subclase",
+        "Un método con demasiadas líneas",
+        "Varios métodos con el mismo nombre y distintos parámetros"
+      ],
+      "answer": 3,
+      "explanation": "Redefinir en una subclase es sobrescritura, no sobrecarga."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué palabra clave se usa para heredar de una clase?",
+      "choices": [
+        "extends",
+        "inherits",
+        "super",
+        "implements"
+      ],
+      "answer": 0,
+      "explanation": "implements se usa para interfaces."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace un bucle for-each sobre una lista?",
+      "choices": [
+        "Ordena la lista",
+        "Solo funciona con arrays de enteros",
+        "Recorre cada elemento sin usar índice",
+        "Elimina los elementos de la lista"
+      ],
+      "answer": 2,
+      "explanation": "Funciona con arrays y con cualquier Iterable."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué excepción se lanza al acceder a un índice fuera de un array?",
+      "choices": [
+        "ArrayIndexOutOfBoundsException",
+        "NumberFormatException",
+        "NullPointerException",
+        "ClassCastException"
+      ],
+      "answer": 0,
+      "explanation": "Es una excepción no comprobada que indica un índice no válido."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué diferencia hay entre una clase abstracta y una interfaz?",
+      "choices": [
+        "Una clase puede extender varias clases abstractas",
+        "La interfaz puede tener constructores y la clase abstracta no",
+        "No hay ninguna, son sinónimos",
+        "La clase abstracta puede tener estado y constructores y la interfaz no tiene campos de instancia"
+      ],
+      "answer": 3,
+      "explanation": "Una clase solo extiende una clase, pero puede implementar varias interfaces."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es el autoboxing?",
+      "choices": [
+        "La conversión automática entre un primitivo y su clase envoltorio, como int e Integer",
+        "Convertir una clase en interfaz",
+        "Ejecutar un método en otro hilo",
+        "Crear un array automáticamente"
+      ],
+      "answer": 0,
+      "explanation": "El compilador inserta las conversiones por ti."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué diferencia hay entre ArrayList y LinkedList al acceder por índice?",
+      "choices": [
+        "ArrayList accede en O(1) y LinkedList en O(n)",
+        "LinkedList accede en O(1) y ArrayList en O(n)",
+        "Ambas en O(log n)",
+        "Ambas en O(n)"
+      ],
+      "answer": 0,
+      "explanation": "ArrayList usa un array interno y LinkedList debe recorrer los nodos."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué es una excepción comprobada (checked)?",
+      "choices": [
+        "La que no se puede lanzar",
+        "La que el compilador obliga a capturar o declarar con throws",
+        "La que ocurre solo en tiempo de ejecución sin aviso",
+        "La que hereda de RuntimeException"
+      ],
+      "answer": 1,
+      "explanation": "IOException es un ejemplo. Las que heredan de RuntimeException no son comprobadas."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve static en un método?",
+      "choices": [
+        "Para que se ejecute al arrancar la JVM",
+        "Para que no se pueda sobrescribir",
+        "Para que solo lo use un hilo",
+        "Para llamarlo sin crear una instancia de la clase"
+      ],
+      "answer": 3,
+      "explanation": "Un método estático pertenece a la clase, no a un objeto."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace super() en un constructor?",
+      "choices": [
+        "Llama al método main",
+        "Llama al constructor de la clase padre",
+        "Crea una copia del objeto",
+        "Convierte la clase en abstracta"
+      ],
+      "answer": 1,
+      "explanation": "Debe ser la primera instrucción del constructor."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué colección mantiene el orden de inserción y no permite duplicados?",
+      "choices": [
+        "ArrayList",
+        "HashSet",
+        "TreeMap",
+        "LinkedHashSet"
+      ],
+      "answer": 3,
+      "explanation": "HashSet no garantiza orden y ArrayList admite duplicados."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace un bloque try-with-resources?",
+      "choices": [
+        "Ejecuta el bloque en otro hilo",
+        "Ignora todas las excepciones",
+        "Reintenta el bloque si falla",
+        "Cierra automáticamente los recursos AutoCloseable al terminar"
+      ],
+      "answer": 3,
+      "explanation": "Evita olvidar el close y es más seguro que un finally manual."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué contrato deben cumplir equals y hashCode?",
+      "choices": [
+        "Si dos objetos son iguales según equals, deben tener el mismo hashCode",
+        "Si tienen el mismo hashCode, deben ser iguales según equals",
+        "Ambos deben calcularse solo con el nombre de la clase",
+        "hashCode debe cambiar en cada llamada"
+      ],
+      "answer": 0,
+      "explanation": "Lo contrario no es obligatorio: dos objetos distintos pueden compartir hash."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué diferencia hay entre map y flatMap en un Stream?",
+      "choices": [
+        "flatMap solo funciona con números",
+        "map es terminal y flatMap es intermedio",
+        "flatMap aplana el stream que genera cada elemento en un solo stream",
+        "No hay diferencia"
+      ],
+      "answer": 2,
+      "explanation": "Con map obtendrías un stream de streams."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué devuelve Optional.orElse(x) si el Optional está vacío?",
+      "choices": [
+        "Un Optional vacío",
+        "Lanza NoSuchElementException",
+        "x",
+        "null"
+      ],
+      "answer": 2,
+      "explanation": "Si hay valor, devuelve ese valor."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué significa List<? extends Number>?",
+      "choices": [
+        "Una lista de Number exactamente",
+        "Una lista a la que se puede añadir cualquier Number",
+        "Una lista de cualquier subtipo de Number, de la que se lee pero no se añade",
+        "Una lista de cualquier tipo, incluido String"
+      ],
+      "answer": 2,
+      "explanation": "El compilador no sabe el tipo exacto, así que impide añadir."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué hace synchronized en un método de instancia?",
+      "choices": [
+        "Bloquea el monitor del objeto this mientras se ejecuta",
+        "Lo ejecuta en un hilo nuevo",
+        "Impide que lance excepciones",
+        "Bloquea siempre toda la clase"
+      ],
+      "answer": 0,
+      "explanation": "Un método synchronized estático bloquea el monitor de la clase."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué diferencia hay entre Comparable y Comparator?",
+      "choices": [
+        "Comparator solo sirve para Strings",
+        "Son lo mismo con distinto nombre",
+        "Comparable define el orden natural dentro de la clase y Comparator lo define desde fuera",
+        "Comparable solo se usa con arrays"
+      ],
+      "answer": 2,
+      "explanation": "Con Comparator puedes ordenar de varias formas sin tocar la clase."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es una lambda en Java?",
+      "choices": [
+        "Una implementación compacta de una interfaz funcional",
+        "Un bloque que se ejecuta al compilar",
+        "Una clase sin métodos",
+        "Un tipo de excepción"
+      ],
+      "answer": 0,
+      "explanation": "Una interfaz funcional tiene un único método abstracto."
+    },
+    {
+      "level": 4,
+      "text": "¿Por qué los Strings son inmutables en Java?",
+      "choices": [
+        "Permite compartirlos con seguridad, cachearlos en el pool y usarlos como claves de mapas",
+        "Porque se guardan en la pila",
+        "Porque son tipos primitivos",
+        "Porque Java no permite modificar ningún objeto"
+      ],
+      "answer": 0,
+      "explanation": "Esa inmutabilidad también los hace seguros entre hilos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué ventaja principal tienen los hilos virtuales de Java 21?",
+      "choices": [
+        "Son más rápidos en cálculo intensivo de CPU",
+        "Eliminan la necesidad de sincronización",
+        "Permiten muchísimos hilos bloqueantes baratos gestionados por la JVM",
+        "Ejecutan cada hilo en un núcleo dedicado"
+      ],
+      "answer": 2,
+      "explanation": "Están pensados para tareas con mucha espera, como peticiones de red."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es el type erasure de los genéricos?",
+      "choices": [
+        "Que se pueden crear arrays de tipos genéricos",
+        "Que los genéricos funcionan con primitivos",
+        "El compilador elimina los tipos genéricos y en ejecución solo queda el tipo bruto",
+        "Que los genéricos solo existen en ejecución"
+      ],
+      "answer": 2,
+      "explanation": "Por eso no puedes hacer new T() ni instanceof List<String>."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace CompletableFuture.thenCompose?",
+      "choices": [
+        "Cancela el futuro si hay error",
+        "Encadena otra operación asíncrona que devuelve un CompletableFuture y aplana el resultado",
+        "Ejecuta dos futuros en paralelo y devuelve el primero",
+        "Espera bloqueando a que termine"
+      ],
+      "answer": 1,
+      "explanation": "Es el equivalente a flatMap para futuros."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué genera automáticamente un record de Java?",
+      "choices": [
+        "Campos finales, constructor, accessors, equals, hashCode y toString",
+        "Una clase que se puede heredar",
+        "Campos modificables con setters",
+        "Una serialización más rápida"
+      ],
+      "answer": 0,
+      "explanation": "Un record es una clase final e inmutable para datos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace el recolector G1 con el heap?",
+      "choices": [
+        "Lo divide en regiones y recoge primero las que tienen más basura",
+        "Lo mantiene como una sola zona continua",
+        "Detiene siempre todos los hilos durante todo el ciclo",
+        "Nunca compacta la memoria"
+      ],
+      "answer": 0,
+      "explanation": "De ahí su nombre, Garbage First."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es la delegación al padre en los ClassLoader?",
+      "choices": [
+        "Carga la clase en paralelo en todos los padres",
+        "Carga siempre la clase él mismo primero",
+        "Pregunta primero a su padre antes de cargar la clase él mismo",
+        "Nunca carga clases de java.lang"
+      ],
+      "answer": 2,
+      "explanation": "Así las clases del núcleo no se pueden sustituir por otras con el mismo nombre."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es una clase sealed?",
+      "choices": [
+        "Una clase que no se puede instanciar",
+        "Una clase que restringe qué otras clases pueden extenderla mediante permits",
+        "Una clase que solo existe en un paquete",
+        "Una clase con todos los campos finales"
+      ],
+      "answer": 1,
+      "explanation": "Permite modelar jerarquías cerradas y usarlas bien en switch."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué ofrece ReentrantLock que synchronized no ofrece?",
+      "choices": [
+        "tryLock, bloqueos interrumpibles y varias condiciones",
+        "Es siempre más rápido",
+        "Permite sincronizar sin ningún objeto",
+        "Evita todos los interbloqueos"
+      ],
+      "answer": 0,
+      "explanation": "A cambio, debes liberar el bloqueo tú mismo en un finally."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué tipo primitivo de Java guarda un entero de 32 bits?",
+      "choices": [
+        "byte",
+        "short",
+        "int",
+        "long"
+      ],
+      "answer": 2,
+      "explanation": "int ocupa 32 bits."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué método es el punto de entrada de una aplicación Java?",
+      "choices": [
+        "public void start()",
+        "public static void main(String[] args)",
+        "public static void run()",
+        "void init(String[] args)"
+      ],
+      "answer": 1,
+      "explanation": "La JVM busca main para arrancar el programa."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué operador compara si dos variables apuntan al mismo objeto?",
+      "choices": [
+        "==",
+        "equals",
+        "=",
+        "==="
+      ],
+      "answer": 0,
+      "explanation": "== compara referencias en objetos."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué clase representa texto inmutable en Java?",
+      "choices": [
+        "StringBuilder",
+        "Text",
+        "CharArray",
+        "String"
+      ],
+      "answer": 3,
+      "explanation": "Un String no cambia una vez creado."
+    },
+    {
+      "level": 1,
+      "text": "¿Qué palabra clave impide reasignar una variable?",
+      "choices": [
+        "static",
+        "final",
+        "const",
+        "volatile"
+      ],
+      "answer": 1,
+      "explanation": "final fija el valor tras la primera asignación."
+    },
+    {
+      "level": 2,
+      "text": "¿Cómo es el acceso por índice en un ArrayList frente a un LinkedList?",
+      "choices": [
+        "ArrayList accede en O(1) y LinkedList en O(n)",
+        "Ambos acceden en O(1)",
+        "LinkedList accede en O(1) y ArrayList en O(n)",
+        "Ninguno permite acceso por índice"
+      ],
+      "answer": 0,
+      "explanation": "ArrayList usa un array interno, LinkedList recorre nodos."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué hace super() dentro de un constructor?",
+      "choices": [
+        "Crea un objeto nuevo",
+        "Llama al método main",
+        "Llama al constructor de la clase padre",
+        "Destruye el objeto actual"
+      ],
+      "answer": 2,
+      "explanation": "Debe ser la primera instrucción del constructor."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué interfaz de colecciones no admite elementos duplicados?",
+      "choices": [
+        "List",
+        "Queue",
+        "Deque",
+        "Set"
+      ],
+      "answer": 3,
+      "explanation": "Set modela conjuntos sin repetidos."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué excepción se lanza al usar un índice fuera de un array?",
+      "choices": [
+        "NullPointerException",
+        "ArrayIndexOutOfBoundsException",
+        "ClassCastException",
+        "NumberFormatException"
+      ],
+      "answer": 1,
+      "explanation": "Es una excepción en tiempo de ejecución."
+    },
+    {
+      "level": 2,
+      "text": "¿Qué modificador limita el acceso a la propia clase?",
+      "choices": [
+        "private",
+        "public",
+        "protected",
+        "final"
+      ],
+      "answer": 0,
+      "explanation": "private oculta el miembro al resto de clases."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace map en un Stream?",
+      "choices": [
+        "Filtra elementos",
+        "Transforma cada elemento aplicando una función",
+        "Ordena los elementos",
+        "Cuenta los elementos"
+      ],
+      "answer": 1,
+      "explanation": "Devuelve un nuevo stream con los resultados."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué diferencia a una excepción comprobada (checked)?",
+      "choices": [
+        "El compilador obliga a capturarla o declararla",
+        "Solo se lanza en producción",
+        "No puede tener mensaje",
+        "Termina siempre la JVM"
+      ],
+      "answer": 0,
+      "explanation": "Las unchecked no exigen tratamiento explícito."
+    },
+    {
+      "level": 3,
+      "text": "¿Para qué sirve try-with-resources?",
+      "choices": [
+        "Reintenta el bloque si falla",
+        "Ejecuta el bloque en otro hilo",
+        "Evita lanzar excepciones",
+        "Cierra automáticamente recursos AutoCloseable"
+      ],
+      "answer": 3,
+      "explanation": "Llama a close al salir del bloque."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué implementación de Map conserva el orden de inserción?",
+      "choices": [
+        "HashMap",
+        "TreeMap",
+        "LinkedHashMap",
+        "Hashtable"
+      ],
+      "answer": 2,
+      "explanation": "Mantiene una lista enlazada de entradas."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué garantiza la palabra clave volatile?",
+      "choices": [
+        "Que las operaciones compuestas sean atómicas",
+        "La visibilidad de los cambios entre hilos",
+        "Que la variable sea constante",
+        "Que solo un hilo la lea"
+      ],
+      "answer": 1,
+      "explanation": "No hace atómicas operaciones como i++."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es el String pool?",
+      "choices": [
+        "Una zona de memoria donde se reutilizan los literales String",
+        "Un hilo que limpia cadenas",
+        "Una caché de bases de datos",
+        "Una colección sincronizada"
+      ],
+      "answer": 0,
+      "explanation": "Dos literales iguales comparten el mismo objeto."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué ofrece Callable frente a Runnable?",
+      "choices": [
+        "Se ejecuta más rápido",
+        "No necesita un hilo",
+        "Solo funciona con streams",
+        "Devuelve un resultado y puede lanzar excepciones comprobadas"
+      ],
+      "answer": 3,
+      "explanation": "Se usa con ExecutorService y Future."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué ventaja tiene ConcurrentHashMap frente a HashMap?",
+      "choices": [
+        "Mantiene las claves ordenadas",
+        "Permite claves repetidas",
+        "Permite acceso concurrente seguro sin bloquear todo el mapa",
+        "Es siempre más lento"
+      ],
+      "answer": 2,
+      "explanation": "Reparte el bloqueo entre segmentos o buckets."
+    },
+    {
+      "level": 4,
+      "text": "¿Qué es el type erasure en los genéricos?",
+      "choices": [
+        "Los genéricos se convierten en reflexión",
+        "El compilador elimina la información de tipos genéricos en ejecución",
+        "Los tipos se comprueban solo en ejecución",
+        "Se borran las clases sin usar"
+      ],
+      "answer": 1,
+      "explanation": "Por eso no se puede hacer new T()."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué establece una relación happens-before?",
+      "choices": [
+        "Que los efectos de una acción son visibles para otra",
+        "Que dos hilos se ejecutan a la vez",
+        "Que un hilo termina antes que otro",
+        "Que el GC se ejecuta primero"
+      ],
+      "answer": 0,
+      "explanation": "Es la base del modelo de memoria de Java."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué ocurre con un objeto que solo tiene referencias débiles?",
+      "choices": [
+        "Nunca se libera",
+        "Se convierte en fuerte",
+        "El recolector puede eliminarlo",
+        "Lanza una excepción"
+      ],
+      "answer": 2,
+      "explanation": "WeakReference no impide la recolección."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué es el escape analysis de la JVM?",
+      "choices": [
+        "Un detector de errores de seguridad",
+        "Un análisis que detecta objetos que no salen del método para optimizarlos",
+        "Un modo de depuración remota",
+        "Un compilador de bytecode a C"
+      ],
+      "answer": 1,
+      "explanation": "Permite asignar en pila o eliminar bloqueos."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué riesgo tiene un ThreadLocal sin limpiar en un pool de hilos?",
+      "choices": [
+        "Bloqueo permanente del pool",
+        "Duplicación de hilos",
+        "Pérdida de la excepción original",
+        "Fugas de memoria y datos de una petición visibles en otra"
+      ],
+      "answer": 3,
+      "explanation": "Los hilos se reutilizan, así que el valor persiste."
+    },
+    {
+      "level": 5,
+      "text": "¿Qué hace Thread.yield?",
+      "choices": [
+        "Sugiere al planificador ceder la CPU sin garantías",
+        "Detiene el hilo para siempre",
+        "Espera a que otro hilo termine",
+        "Libera todos los bloqueos"
+      ],
+      "answer": 0,
+      "explanation": "Es solo una pista para el planificador."
+    },
+    {
+      "level": 3,
+      "text": "¿Qué hace Collections.sort sobre una lista?",
+      "choices": [
+        "Devuelve una copia desordenada",
+        "Ordena la lista con el orden natural o un Comparator",
+        "Elimina los duplicados",
+        "Invierte el orden de inserción"
+      ],
+      "answer": 1,
+      "explanation": "Modifica la propia lista."
+    }
+  ]
+}
