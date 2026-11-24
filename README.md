@@ -4,7 +4,7 @@ Plataforma para preparar entrevistas técnicas de programación. Proyecto final 
 Practica con preguntas tipo test que se adaptan a tu nivel, mentores con chat en tiempo real,
 chatbot con IA y cuestionarios a medida a partir de ofertas de trabajo.
 
-El nombre PrepCards es provisional.
+El nombre PrepCards es provisional.         http://34.175.99.216/
 
 
 Contenido
